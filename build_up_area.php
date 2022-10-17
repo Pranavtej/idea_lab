@@ -113,8 +113,10 @@
 			<!-- ============================ Our Awards Start ================================== -->
 			<div class="text-center"><h2>Details Of Build Up Area</h2></div>
             <div class="container">
-            <table class="table table-bordered">
-  <thead>
+			<div class="table-responsive">
+							
+							<table id="myTable" class="table table-striped wishlist">
+								  <thead>
     <tr>
       <th scope="col">Description</th>
       <th scope="col">Space proposed In Sq.ft</th>
@@ -142,6 +144,8 @@
     </tr>
   </tbody>
 </table>
+</div>
+</div>
 </div>
 
 

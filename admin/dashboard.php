@@ -1,18 +1,21 @@
+<?php session_start();
 
-
-<?php
-session_start();
 include '../connect.php';
+
+if(empty($_SESSION['name']))
+{
+	header(location: "index.php");
+}
 $name=$_SESSION['name'];
 $deg=$_SESSION['deg'];
-$photo=$_SESSION['photo'];
+$photo_admin=$_SESSION['photo_admin'];
 
 ?>
 <!DOCTYPE html>
 <html lang="zxx">
 	<head>
-		<meta charset="utf-8">
-		<meta name="author" content="Themezhub">
+		<meta charset="utf-8" />
+		<meta name="author" content="Themezhub" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Dashboard</title>
 		 
@@ -37,137 +40,66 @@ $photo=$_SESSION['photo'];
 					<nav id="navigation" class="navigation navigation-landscape">
 						<div class="nav-header">
 							<a class="nav-brand" href="#">
-								<img src="../assets/img/logo.png" class="logo" alt="">
+								<img src="../assets/img/logo.png" class="logo" alt="" />
 							</a>
 							<div class="nav-toggle"></div>
 							<div class="mobile_nav">
 								<ul>
-									<li class="account-drop">
-										<a href="javascript:void(0);" class="crs_yuo12" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											<span class="embos_45"><i class="fas fa-shopping-basket"></i><i class="embose_count">4</i></span>
-										</a>
-										<div class="dropdown-menu pull-right animated flipInX">
-											<div class="drp_menu_headr bg-purple">
-												<h4>Wishlist Product</h4>
-											</div>
-											<div class="ground-list ground-hover-list">
-												<div class="ground ground-list-single">
-													<div class="grd_thum"><img src="../assets/img/cr-1.jpg" class="img-fluid rounded" width="50" alt=""></div>
-													<div class="ground-content">
-														<h6>Web History<small class="float-right text-fade">$120</small></h6>
-														<a href="#" class="small text-danger">Remove</a>
-													</div>
-												</div>
-												
-												<div class="ground ground-list-single">
-													<div class="grd_thum"><img src="../assets/img/cr-3.jpg" class="img-fluid rounded" width="50" alt=""></div>
-													<div class="ground-content">
-														<h6>Physics Beginning<small class="float-right text-fade">$99</small></h6>
-														<a href="#" class="small text-danger">Remove</a>
-													</div>
-												</div>
-												
-												<div class="ground ground-list-single">
-													<div class="grd_thum"><img src="../assets/img/cr-4.jpg" class="img-fluid rounded" width="50" alt=""></div>
-													<div class="ground-content">
-														<h6>Computer Fundamental<small class="float-right text-fade">$99</small></h6>
-														<a href="#" class="small text-danger">Remove</a>
-													</div>
-												</div>
-												
-												<div class="ground ground-list-single">
-													<div class="grd_thum"><img src="../assets/img/cr-5.jpg" class="img-fluid rounded" width="50" alt=""></div>
-													<div class="ground-content">
-														<h6>Computer Advance<small class="float-right text-fade">$49</small></h6>
-														<a href="#" class="small text-danger">Remove</a>
-													</div>
-												</div>
-												
-												<div class="ground ground-list-single">
-													<button type="button" class="btn theme-bg text-white full-width">Go To Cart</button>
-												</div>
-												
-											</div>
-										</div>
-									</li>
-									<li class="account-drop">
-										<a href="javascript:void(0);" class="crs_yuo12" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											<span class="embos_45"><i class="fas fa-bell"></i><i class="embose_count red">3</i></span>
-										</a>
-										<div class="dropdown-menu pull-right animated flipInX">
-											<div class="drp_menu_headr bg-warning">
-												<h4>22 Notifications</h4>
-											</div>
-											<div class="ground-list ground-hover-list">
-												<div class="ground ground-list-single">
-													<div class="rounded-circle p-3 p-sm-4 d-flex align-items-center justify-content-center bg-light-success">
-														<div class="position-absolute text-success h5 mb-0"><i class="fas fa-user"></i></div>
-													</div>
-
-													<div class="ground-content">
-														<h6><a href="#">Maryam Amiri</a></h6>
-														<small class="text-fade">New User Enrolled in Python</small>
-														<span class="small">Just Now</span>
-													</div>
-												</div>
-												
-												<div class="ground ground-list-single">
-													<div class="rounded-circle p-3 p-sm-4 d-flex align-items-center justify-content-center bg-light-danger">
-														<div class="position-absolute text-danger h5 mb-0"><i class="fas fa-comments"></i></div>
-													</div>
-
-													<div class="ground-content">
-														<h6><a href="#">Shilpa Rana</a></h6>
-														<small class="text-fade">Shilpa Send a Message</small>
-														<span class="small">02 Min Ago</span>
-													</div>
-												</div>
-												
-												<div class="ground ground-list-single">
-													<div class="rounded-circle p-3 p-sm-4 d-flex align-items-center justify-content-center bg-light-info">
-														<div class="position-absolute text-info h5 mb-0"><i class="fas fa-grin-squint-tears"></i></div>
-													</div>
-
-													<div class="ground-content">
-														<h6><a href="#">Amar Muskali</a></h6>
-														<small class="text-fade">Need Responsive Business Tem...</small>
-														<span class="small">10 Min Ago</span>
-													</div>
-												</div>
-												
-												<div class="ground ground-list-single">
-													<div class="rounded-circle p-3 p-sm-4 d-flex align-items-center justify-content-center bg-light-purple">
-														<div class="position-absolute text-purple h5 mb-0"><i class="fas fa-briefcase"></i></div>
-													</div>
-
-													<div class="ground-content">
-														<h6><a href="#">Maryam Amiri</a></h6>
-														<small class="text-fade">Next Meeting on Tuesday..</small>
-														<span class="small">15 Min Ago</span>
-													</div>
-												</div>
-												
-											</div>
-										</div>
-									</li>
 									
+								<li class="account-drop">
+									<a href="javascript:void(0);" class="crs_yuo12" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<span class="embos_45"><i class="fas fa-bell"></i><i class="embose_count red">new</i></span>
+									</a>
+									<div class="dropdown-menu pull-right animated flipInX">
+										<div class="drp_menu_headr bg-warning">
+										<h4>	Notifications</h4>
+										</div>
+											<?php 
+											date_default_timezone_set("Asia/Calcutta");  
+											$ct=date('Y-m-d');
+											$std="select regno,intime,out_time from log where intime like '$ct%' and out_time='---' limit 5";
+											$res=mysqli_query($con,$std);
+											
+										while($result=mysqli_fetch_assoc($res))
+										{
+											$reg=$result['regno'];
+										
+											 $intime=$result['intime'];
+											 $outtime=$result['out_time'];
+										echo'
+										<div class="ground-list ground-hover-list">
+											<div class="ground ground-list-single">
+												<div class="rounded-circle p-3 p-sm-4 d-flex align-items-center justify-content-center bg-light-success">
+													<div class="position-absolute text-success h5 mb-0"><i class="fas fa-user"></i></div>
+												</div>
+
+												<div class="ground-content">
+													<h6><a href="#">'.$reg.'</a></h6>
+													<small class="text-fade">'.$intime.'</small>
+													<span class="small">Loged into Lab Just Now</span>
+												</div>
+											</div>
+											</div>';
+										}
+											?>		
+								</li>
 									<li>
 										<div class="btn-group account-drop">
 											<a href="javascript:void(0);" class="crs_yuo12 btn btn-order-by-filt" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-												<img src="../assets/img/user-5.jpg" class="avater-img" alt="">
+												<img src="../<?php echo $photo_admin; ?>" class="avater-img" alt="">
 											</a>
 											<div class="dropdown-menu pull-right animated flipInX">
 												<div class="drp_menu_headr">
-													<h4>Hi, Daniel</h4>
+													<h4>Hi, <?php echo $name ; ?></h4>
 												</div>
 												<ul>
-													<li><a href="dashboard.html"><i class="fa fa-tachometer-alt"></i>Dashboard<span class="notti_coun style-1">4</span></a></li>                                  
-													<li><a href="my-profile.html"><i class="fa fa-user-tie"></i>My Profile</a></li>                                 
-													<li><a href="manage-course.html"><i class="fas fa-shopping-basket"></i>Manage Courses<span class="notti_coun style-2">7</span></a></li>
+													<li><a href="dashboard.php"><i class="fa fa-tachometer-alt"></i>Dashboard<span class="notti_coun style-1">4</span></a></li>                                  
+													<li><a href=""><i class="fa fa-user-tie"></i>My Profile</a></li>                                 
+													<!-- <li><a href="manage-course.html"><i class="fas fa-shopping-basket"></i>Manage Courses<span class="notti_coun style-2">7</span></a></li>
 													<li><a href="manage-instructor.html"><i class="fas fa-toolbox"></i>Manage Instructor</a></li>
 													<li><a href="manage-students.html"><i class="fa fa-envelope"></i>Manage Students<span class="notti_coun style-3">3</span></a></li>
-													<li><a href="messages.html"><i class="fas fa-comments"></i>Messages</a></li>
-													<li><a href="login.html"><i class="fa fa-unlock-alt"></i>Sign Out</a></li>
+													<li><a href="messages.html"><i class="fas fa-comments"></i>Messages</a></li> -->
+													<li><a href="logout.php"><i class="fa fa-unlock-alt"></i>Sign Out</a></li>
 												</ul>
 											</div>
 										</div>
@@ -175,7 +107,7 @@ $photo=$_SESSION['photo'];
 								</ul>
 							</div>
 						</div>
-						<div class="nav-menus-wrapper" style="transition-property: none;">
+						<!-- <div class="nav-menus-wrapper" style="transition-property: none;">
 							<ul class="nav-menu">
 							
 								<li><a href="#">Home<span class="submenu-indicator"></span></a>
@@ -253,65 +185,31 @@ $photo=$_SESSION['photo'];
 								<li class="active"><a href="dashboard.html">Dashboard</a></li>
 								
 							</ul>
-							
+							 -->
 							<ul class="nav-menu nav-menu-social align-to-right">
+								
 								
 								<li class="account-drop">
 									<a href="javascript:void(0);" class="crs_yuo12" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										<span class="embos_45"><i class="fas fa-shopping-basket"></i><i class="embose_count">4</i></span>
-									</a>
-									<div class="dropdown-menu pull-right animated flipInX">
-										<div class="drp_menu_headr bg-purple">
-											<h4>Wishlist Product</h4>
-										</div>
-										<div class="ground-list ground-hover-list">
-											<div class="ground ground-list-single">
-												<div class="grd_thum"><img src="../assets/img/cr-1.jpg" class="img-fluid rounded" width="50" alt=""></div>
-												<div class="ground-content">
-													<h6>Web History<small class="float-right text-fade">$120</small></h6>
-													<a href="#" class="small text-danger">Remove</a>
-												</div>
-											</div>
-											
-											<div class="ground ground-list-single">
-												<div class="grd_thum"><img src="../assets/img/cr-3.jpg" class="img-fluid rounded" width="50" alt=""></div>
-												<div class="ground-content">
-													<h6>Physics Beginning<small class="float-right text-fade">$99</small></h6>
-													<a href="#" class="small text-danger">Remove</a>
-												</div>
-											</div>
-											
-											<div class="ground ground-list-single">
-												<div class="grd_thum"><img src="../assets/img/cr-4.jpg" class="img-fluid rounded" width="50" alt=""></div>
-												<div class="ground-content">
-													<h6>Computer Fundamental<small class="float-right text-fade">$99</small></h6>
-													<a href="#" class="small text-danger">Remove</a>
-												</div>
-											</div>
-											
-											<div class="ground ground-list-single">
-												<div class="grd_thum"><img src="../assets/img/cr-5.jpg" class="img-fluid rounded" width="50" alt=""></div>
-												<div class="ground-content">
-													<h6>Computer Advance<small class="float-right text-fade">$49</small></h6>
-													<a href="#" class="small text-danger">Remove</a>
-												</div>
-											</div>
-											
-											<div class="ground ground-list-single">
-												<button type="button" class="btn theme-bg text-white full-width">Go To Cart</button>
-											</div>
-											
-										</div>
-									</div>
-								</li>
-								<li class="account-drop">
-									<a href="javascript:void(0);" class="crs_yuo12" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										<span class="embos_45"><i class="fas fa-bell"></i><i class="embose_count red">3</i></span>
+										<span class="embos_45"><i class="fas fa-bell"></i><i class="embose_count red">new</i></span>
 									</a>
 									<div class="dropdown-menu pull-right animated flipInX">
 										<div class="drp_menu_headr bg-warning">
-											<h4>22 Notifications</h4>
+										<h4>	Notifications</h4>
 										</div>
+											<?php 
+											date_default_timezone_set("Asia/Calcutta");  
+											$ct=date('Y-m-d');
+											$std="select regno,photo,intime,out_time from log where intime like '$ct%' and out_time='---' limit 5";
+											$res=mysqli_query($con,$std);
+											
+										while($result=mysqli_fetch_assoc($res))
+										{
+											$reg=$result['regno'];
+											$photo=$result['photo'];
+											 $intime=$result['intime'];
+											 $outtime=$result['out_time'];
+										echo'
 										<div class="ground-list ground-hover-list">
 											<div class="ground ground-list-single">
 												<div class="rounded-circle p-3 p-sm-4 d-flex align-items-center justify-content-center bg-light-success">
@@ -319,72 +217,36 @@ $photo=$_SESSION['photo'];
 												</div>
 
 												<div class="ground-content">
-													<h6><a href="#">Maryam Amiri</a></h6>
-													<small class="text-fade">New User Enrolled in Python</small>
-													<span class="small">Just Now</span>
+													<h6><a href="#">'.$reg.'</a></h6>
+													<small class="text-fade">'.$intime.'</small>
+													<span class="small">Loged into Lab Just Now</span>
 												</div>
 											</div>
-											
-											<div class="ground ground-list-single">
-												<div class="rounded-circle p-3 p-sm-4 d-flex align-items-center justify-content-center bg-light-danger">
-													<div class="position-absolute text-danger h5 mb-0"><i class="fas fa-comments"></i></div>
-												</div>
-
-												<div class="ground-content">
-													<h6><a href="#">Shilpa Rana</a></h6>
-													<small class="text-fade">Shilpa Send a Message</small>
-													<span class="small">02 Min Ago</span>
-												</div>
-											</div>
-											
-											<div class="ground ground-list-single">
-												<div class="rounded-circle p-3 p-sm-4 d-flex align-items-center justify-content-center bg-light-info">
-													<div class="position-absolute text-info h5 mb-0"><i class="fas fa-grin-squint-tears"></i></div>
-												</div>
-
-												<div class="ground-content">
-													<h6><a href="#">Amar Muskali</a></h6>
-													<small class="text-fade">Need Responsive Business Tem...</small>
-													<span class="small">10 Min Ago</span>
-												</div>
-											</div>
-											
-											<div class="ground ground-list-single">
-												<div class="rounded-circle p-3 p-sm-4 d-flex align-items-center justify-content-center bg-light-purple">
-													<div class="position-absolute text-purple h5 mb-0"><i class="fas fa-briefcase"></i></div>
-												</div>
-
-												<div class="ground-content">
-													<h6><a href="#">Maryam Amiri</a></h6>
-													<small class="text-fade">Next Meeting on Tuesday..</small>
-													<span class="small">15 Min Ago</span>
-												</div>
-											</div>
-											
-										</div>
-									</div>
+											</div>';
+										}
+											?>		
 								</li>
 								<li>
-									<div class="btn-group account-drop">
-										<a href="javascript:void(0);" class="crs_yuo12 btn btn-order-by-filt" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											<img src="../assets/img/user-5.jpg" class="avater-img" alt="">
-										</a>
-										<div class="dropdown-menu pull-right animated flipInX">
-											<div class="drp_menu_headr">
-												<h4>Hi, Daniel</h4>
+										<div class="btn-group account-drop">
+											<a href="javascript:void(0);" class="crs_yuo12 btn btn-order-by-filt" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												<img src="../<?php echo $photo_admin; ?>" class="avater-img" alt="">
+											</a>
+											<div class="dropdown-menu pull-right animated flipInX">
+												<div class="drp_menu_headr">
+													<h4>Hi, <?php echo $name ; ?></h4>
+												</div>
+												<ul>
+													<li><a href="dashboard.php"><i class="fa fa-tachometer-alt"></i>Dashboard</a></li>                                  
+													<li><a href=""><i class="fa fa-user-tie"></i>My Profile</a></li>                                 
+													<!-- <li><a href="manage-course.html"><i class="fas fa-shopping-basket"></i>Manage Courses<span class="notti_coun style-2">7</span></a></li>
+													<li><a href="manage-instructor.html"><i class="fas fa-toolbox"></i>Manage Instructor</a></li>
+													<li><a href="manage-students.html"><i class="fa fa-envelope"></i>Manage Students<span class="notti_coun style-3">3</span></a></li>
+													<li><a href="messages.html"><i class="fas fa-comments"></i>Messages</a></li> -->
+													<li><a href="logout.php"><i class="fa fa-unlock-alt"></i>Sign Out</a></li>
+												</ul>
 											</div>
-											<ul>
-												<li><a href="dashboard.html"><i class="fa fa-tachometer-alt"></i>Dashboard<span class="notti_coun style-1">4</span></a></li>                                  
-												<li><a href="my-profile.html"><i class="fa fa-user-tie"></i>My Profile</a></li>                                 
-												<li><a href="manage-course.html"><i class="fas fa-shopping-basket"></i>Manage Courses<span class="notti_coun style-2">7</span></a></li>
-												<li><a href="manage-instructor.html"><i class="fas fa-toolbox"></i>Manage Instructor</a></li>
-												<li><a href="manage-students.html"><i class="fa fa-envelope"></i>Manage Students<span class="notti_coun style-3">3</span></a></li>
-												<li><a href="messages.html"><i class="fas fa-comments"></i>Messages</a></li>
-												<li><a href="login.html"><i class="fa fa-unlock-alt"></i>Sign Out</a></li>
-											</ul>
 										</div>
-									</div>
-								</li>
+									</li>
 							</ul>
 						</div>
 					</nav>
@@ -406,89 +268,21 @@ $photo=$_SESSION['photo'];
 							<div class="dashboard-navbar">
 								
 								<div class="d-user-avater">
-									<img src="<?php echo '../'.$photo ;?>" class="img-fluid avater" alt="">
-									<h4><?php echo $name; ?> </h4>
-									<span><?php echo $deg; ?></span>
+									<img src="../<?php echo $photo_admin	 ?>" class="img-fluid avater" alt="">
+									<h4><?php echo $name ?></h4>
+									<span><?php echo $deg ?></span>
 									<div class="elso_syu89">
 										<ul>
 											
 										</ul>
 									</div>
 									<div class="elso_syu77">
-										<div class="one_third"><div class="one_45ic text-warning bg-light-warning"><i class="fas fa-star"></i></div><span>Registered Students</span></div>
-										<div class="one_third"><div class="one_45ic text-success bg-light-success"><i class="fas fa-file-invoice"></i></div><span>No Of Projects</span></div>
-										<div class="one_third"><div class="one_45ic text-purple bg-light-purple"><i class="fas fa-user"></i></div><span>Logined Students</span></div>
+										<div class="one_third"><div class="one_45ic text-warning bg-light-warning"><i class="fas fa-star"></i></div><span>Ratings</span></div>
+										<div class="one_third"><div class="one_45ic text-success bg-light-success"><i class="fas fa-file-invoice"></i></div><span>Courses</span></div>
+										<div class="one_third"><div class="one_45ic text-purple bg-light-purple"><i class="fas fa-user"></i></div><span>My Profile</span></div>
 									</div>
 								</div>
-								
-								<div class="d-navigation">
-									<ul id="side-menu">
-										<li class="active"><a href="dashboard.html"><i class="fas fa-th"></i>Dashboard</a></li>
-										<li class="dropdown">
-											<a href="javascript:void(0);"><i class="fas fa-shopping-basket"></i>Courses<span class="ti-angle-left"></span></a>
-											<ul class="nav nav-second-level">
-												<li><a href="manage-course.html">Manage Courses</a></li>
-												<li><a href="add-new-course.html">Add New Course</a></li>
-												<li><a href="course-category.html">Course Category</a></li>
-												<li><a href="coupons.html">Coupons</a></li>
-											</ul>
-										</li>
-										<li class="dropdown">
-											<a href="javascript:void(0);"><i class="fas fa-gem"></i>Enrollment<span class="ti-angle-left"></span></a>
-											<ul class="nav nav-second-level">
-												<li><a href="enroll-history.html">Enroll History</a></li>
-												<li><a href="enroll-student.html">Enroll a Student</a></li>
-											</ul>
-										</li>
-										<li class="dropdown">
-											<a href="javascript:void(0);"><i class="fas fa-archive"></i>Report<span class="ti-angle-left"></span></a>
-											<ul class="nav nav-second-level">
-												<li><a href="admin-revenue.html">Admin Revenue</a></li>
-												<li><a href="instructor-revenue.html">Instructor Revenue</a></li>
-											</ul>
-										</li>
-										<li class="dropdown">
-											<a href="javascript:void(0);"><i class="fas fa-user-shield"></i>Admins<span class="ti-angle-left"></span></a>
-											<ul class="nav nav-second-level">
-												<li><a href="manage-admins.html">Manage Admins</a></li>
-												<li><a href="add-admin.html">Add New Admins</a></li>
-											</ul>
-										</li>
-										<li class="dropdown">
-											<a href="javascript:void(0);"><i class="fas fa-toolbox"></i>Instructors<span class="ti-angle-left"></span></a>
-											<ul class="nav nav-second-level">
-												<li><a href="manage-instructor.html">Manage Instructors</a></li>
-												<li><a href="add-instructor.html">Add New Instructors</a></li>
-												<li><a href="instructor-payout.html">Instructors Payouts</a></li>
-											</ul>
-										</li>
-										<li class="dropdown">
-											<a href="javascript:void(0);"><i class="fas fa-user"></i>Students<span class="ti-angle-left"></span></a>
-											<ul class="nav nav-second-level">
-												<li><a href="manage-students.html">Manage Students</a></li>
-												<li><a href="add-students.html">Add New Student</a></li>
-											</ul>
-										</li>
-										<li><a href="addon-manager.html"><i class="fas fa-layer-group"></i>Addon</a></li>
-										<li><a href="themes.html"><i class="fas fa-paint-brush"></i>Themes</a></li>
-										<li><a href="messages.html"><i class="fas fa-comments"></i>Message</a></li>
-										<li><a href="my-profile.html"><i class="fas fa-address-card"></i>My Profile</a></li>
-										<li class="dropdown">
-											<a href="javascript:void(0);"><i class="fas fa-cog"></i>Settings<span class="ti-angle-left"></span></a>
-											<ul class="nav nav-second-level">
-												<li><a href="website-settings.html">Website Settings</a></li>
-												<li><a href="system-settings.html">System Settings</a></li>
-												<li><a href="payment_settings.html">Payment Settings</a></li>
-												<li><a href="social-login.html">Social Logins</a></li>
-												<li><a href="smtp-setting.html">SMTP Settings</a></li>
-												<li><a href="dash-about.html">About App</a></li>
-											</ul>
-										</li>
-									</ul>
-								</div>
-								
-							</div>
-						</div>	
+								<?php include 'menu-dashboard.php' ;?>
 						
 						<div class="col-lg-9 col-md-9 col-sm-12">
 							
@@ -503,13 +297,16 @@ $photo=$_SESSION['photo'];
 									</nav>
 								</div>
 							</div>
+							
+							<?php include 'stat.php';?>
+							<!-- /Row -->
 							<!-- /Row -->
 							
 							<div class="row">
 								<div class="col-xl-12 col-lg-12 col-md-12">
 									<div class="card">
 										<div class="card-header">
-											<h4 class="mb-0">Admin Revenue This Year</h4>
+											<h4 class="mb-0">Students</h4>
 										</div>
 										<div class="card-body">
 											<div class="chart" id="extra-area-chart" style="height: 300px;"></div>
@@ -519,157 +316,69 @@ $photo=$_SESSION['photo'];
 							</div>
 							
 							<!-- Row -->
-							<div class="row">
-						
-								<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-									<div class="dashboard_stats_wrap">
-										<div class="rounded-circle p-4 p-sm-4 d-inline-flex align-items-center justify-content-center theme-bg mb-2"><div class="position-absolute text-white h5 mb-0"><i class="fas fa-book"></i></div></div>
-										<div class="dashboard_stats_wrap_content"><h4>607</h4> <span>Number of Cources</span></div>
-									</div>	
-								</div>
-								
-								<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-									<div class="dashboard_stats_wrap">
-										<div class="rounded-circle p-4 p-sm-4 d-inline-flex align-items-center justify-content-center bg-primary mb-2"><div class="position-absolute text-white h5 mb-0"><i class="fas fa-video"></i></div></div>
-										<div class="dashboard_stats_wrap_content"><h4>5.2k</h4> <span>Number of Lession</span></div>
-									</div>	
-								</div>
-								
-								<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-									<div class="dashboard_stats_wrap">
-										<div class="rounded-circle p-4 p-sm-4 d-inline-flex align-items-center justify-content-center bg-warning mb-2"><div class="position-absolute text-white h5 mb-0"><i class="fas fa-users"></i></div></div>
-										<div class="dashboard_stats_wrap_content"><h4>78k</h4> <span>Number of Students</span></div>
-									</div>	
-								</div>
-								
-								<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-									<div class="dashboard_stats_wrap">
-										<div class="rounded-circle p-4 p-sm-4 d-inline-flex align-items-center justify-content-center bg-purple mb-2"><div class="position-absolute text-white h5 mb-0"><i class="fas fa-gem"></i></div></div>
-										<div class="dashboard_stats_wrap_content"><h4>32k</h4> <span>Number of Enrollment</span></div>
-									</div>	
-								</div>
-
-							</div>
-							<!-- /Row -->
-							
 							<!-- Row -->
 							<div class="row">
 						
 								<div class="col-lg-8 col-md-12 col-sm-12">
 									<div class="row">
 										<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-											<h5>Featured Cources</h5>										
+											<h5>Recent News</h5>										
 										</div>
+										<?php
+										$news="SELECT title,photo,description,time FROM news ";
+													$new=mysqli_query($con,$news);
+													while($n=mysqli_fetch_assoc($new))
+													{
+														echo'
 										<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
 											<div class="grousp_crs">
 												<div class="grousp_crs_left">
-													<div class="grousp_crs_thumb"><img src="../assets/img/c-7.png" class="img-fluid" alt=""></div>
-													<div class="grousp_crs_caption"><h4>Adobe Photoshop cc 2021 - Free Assential Training</h4></div>
+													<div class="grousp_crs_thumb"><img src="../assets/img/c-7.png" class="img-fluid" alt="" /></div>
+													<div class="grousp_crs_caption"><h4>'.$n['title'].'</h4></div>
+													<small>'.$n['description'].'</small>
+
 												</div>
 												<div class="grousp_crs_right">
-													<div class="frt_125"><i class="fas fa-fire text-warning mr-1"></i>8.7</div>
-													<div class="frt_but"><a href="#" class="btn text-white theme-bg">View Course</a></div>
+													<div class="frt_125"><i class="fas fa-fire text-warning mr-1"></i><small>0 Views</small></div>
+													<div class="frt_but"><a href="#" class="btn text-white theme-bg">View News</a></div>
 												</div>
 											</div>
-											<div class="grousp_crs">
-												<div class="grousp_crs_left">
-													<div class="grousp_crs_thumb"><img src="../assets/img/c-6.png" class="img-fluid" alt=""></div>
-													<div class="grousp_crs_caption"><h4>Adobe Photoshop cc 2021 - Free Assential Training</h4></div>
-												</div>
-												<div class="grousp_crs_right">
-													<div class="frt_125"><i class="fas fa-fire text-warning mr-1"></i>8.7</div>
-													<div class="frt_but"><a href="#" class="btn text-white theme-bg">View Course</a></div>
-												</div>
-											</div>
-											<div class="grousp_crs">
-												<div class="grousp_crs_left">
-													<div class="grousp_crs_thumb"><img src="../assets/img/c-5.png" class="img-fluid" alt=""></div>
-													<div class="grousp_crs_caption"><h4>Adobe Photoshop cc 2021 - Free Assential Training</h4></div>
-												</div>
-												<div class="grousp_crs_right">
-													<div class="frt_125"><i class="fas fa-fire text-warning mr-1"></i>8.7</div>
-													<div class="frt_but"><a href="#" class="btn text-white theme-bg">View Course</a></div>
-												</div>
-											</div>
-											<div class="grousp_crs">
-												<div class="grousp_crs_left">
-													<div class="grousp_crs_thumb"><img src="../assets/img/c-4.png" class="img-fluid" alt=""></div>
-													<div class="grousp_crs_caption"><h4>Adobe Photoshop cc 2021 - Free Assential Training</h4></div>
-												</div>
-												<div class="grousp_crs_right">
-													<div class="frt_125"><i class="fas fa-fire text-warning mr-1"></i>8.7</div>
-													<div class="frt_but"><a href="#" class="btn text-white theme-bg">View Course</a></div>
-												</div>
-											</div>
-											<div class="grousp_crs">
-												<div class="grousp_crs_left">
-													<div class="grousp_crs_thumb"><img src="../assets/img/c-3.png" class="img-fluid" alt=""></div>
-													<div class="grousp_crs_caption"><h4>Adobe Photoshop cc 2021 - Free Assential Training</h4></div>
-												</div>
-												<div class="grousp_crs_right">
-													<div class="frt_125"><i class="fas fa-fire text-warning mr-1"></i>8.7</div>
-													<div class="frt_but"><a href="#" class="btn text-white theme-bg">View Course</a></div>
-												</div>
-											</div>
+											</div> ';
+													}
+											?>
+											
 										</div>
 									</div>
-								</div>
+								
+								
 								
 								<div class="col-lg-4 col-md-12 col-sm-12">
 									<div class="card">
 										<div class="card-header">
-											<h6>Notifications</h6>
+											<h6>Events</h6>
 										</div>
-										<div class="ground-list ground-hover-list">
-											<div class="ground ground-list-single">
-												<div class="rounded-circle p-3 p-sm-4 d-flex align-items-center justify-content-center bg-light-success">
-													<div class="position-absolute text-success h5 mb-0"><i class="fas fa-user"></i></div>
+										<?php
+												$qoo="SELECT title,photo,description,date FROM events ";
+													$fr=mysqli_query($con,$qoo);
+													while($kk=mysqli_fetch_assoc($fr))
+													{
+														echo'<div class="ground-list ground-hover-list">
+														<div class="ground ground-list-single">
+													<div class="rounded-circle p-3 p-sm-4 d-flex align-items-center justify-content-center bg-light-success">
+														<div class="position-absolute text-success h5 mb-0"><i class="fa fa-calendar"></i></div>
+													</div>
+													
+													<div class="ground-content">
+														<h6><a href="#">'.$kk['title'].'</a></h6>
+														<small class="text-fade">'.$kk['description'].'</small>
+														<span class="small">'.$kk['date'].'</span>
+													</div>
 												</div>
+												</div>';
 
-												<div class="ground-content">
-													<h6><a href="#">Maryam Amiri</a></h6>
-													<small class="text-fade">New User Enrolled in Python</small>
-													<span class="small">Just Now</span>
-												</div>
-											</div>
-											
-											<div class="ground ground-list-single">
-												<div class="rounded-circle p-3 p-sm-4 d-flex align-items-center justify-content-center bg-light-danger">
-													<div class="position-absolute text-danger h5 mb-0"><i class="fas fa-comments"></i></div>
-												</div>
-
-												<div class="ground-content">
-													<h6><a href="#">Shilpa Rana</a></h6>
-													<small class="text-fade">Shilpa Send a Message</small>
-													<span class="small">02 Min Ago</span>
-												</div>
-											</div>
-											
-											<div class="ground ground-list-single">
-												<div class="rounded-circle p-3 p-sm-4 d-flex align-items-center justify-content-center bg-light-info">
-													<div class="position-absolute text-info h5 mb-0"><i class="fas fa-grin-squint-tears"></i></div>
-												</div>
-
-												<div class="ground-content">
-													<h6><a href="#">Amar Muskali</a></h6>
-													<small class="text-fade">Need Responsive Business Tem...</small>
-													<span class="small">10 Min Ago</span>
-												</div>
-											</div>
-											
-											<div class="ground ground-list-single">
-												<div class="rounded-circle p-3 p-sm-4 d-flex align-items-center justify-content-center bg-light-purple">
-													<div class="position-absolute text-purple h5 mb-0"><i class="fas fa-briefcase"></i></div>
-												</div>
-
-												<div class="ground-content">
-													<h6><a href="#">Maryam Amiri</a></h6>
-													<small class="text-fade">Next Meeting on Tuesday..</small>
-													<span class="small">15 Min Ago</span>
-												</div>
-											</div>
-											
-										</div>
+													}
+											?>	
+										
 									</div>		
 								</div>
 
@@ -685,7 +394,7 @@ $photo=$_SESSION['photo'];
 			<!-- ============================ Dashboard: Dashboard End ================================== -->
 			
 			<!-- ============================ Call To Action ================================== -->
-			<section class="theme-bg call_action_wrap-wrap">
+			<!-- <section class="theme-bg call_action_wrap-wrap">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12">
@@ -701,92 +410,13 @@ $photo=$_SESSION['photo'];
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> -->
 			<!-- ============================ Call To Action End ================================== -->
 			
 			<!-- ============================ Footer Start ================================== -->
-			<footer class="dark-footer skin-dark-footer style-2">
-				<div class="footer-middle">
-					<div class="container">
-						<div class="row">
-							
-							<div class="col-lg-5 col-md-5">
-								<div class="footer_widget">
-									<img src="../assets/img/logo-light.png" class="img-footer small mb-2" alt="">
-									<h4 class="extream mb-3">Do you need help with<br>anything?</h4>
-									<p>Receive updates, hot deals, tutorials, discounts sent straignt in your inbox every month</p>
-									<div class="foot-news-last">
-										<div class="input-group">
-										  <input type="text" class="form-control" placeholder="Email Address">
-											<div class="input-group-append">
-												<button type="button" class="input-group-text theme-bg b-0 text-light">Subscribe</button>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							
-							<div class="col-lg-6 col-md-7 ml-auto">
-								<div class="row">
-								
-									<div class="col-lg-4 col-md-4">
-										<div class="footer_widget">
-											<h4 class="widget_title">Layouts</h4>
-											<ul class="footer-menu">
-												<li><a href="#">Home Page</a></li>
-												<li><a href="#">About Page</a></li>
-												<li><a href="#">Service Page</a></li>
-												<li><a href="#">Property Page</a></li>
-												<li><a href="#">Contact Page</a></li>
-												<li><a href="#">Single Blog</a></li>
-											</ul>
-										</div>
-									</div>
-											
-									<div class="col-lg-4 col-md-4">
-										<div class="footer_widget">
-											<h4 class="widget_title">All Sections</h4>
-											<ul class="footer-menu">
-												<li><a href="#">Headers<span class="new">New</span></a></li>
-												<li><a href="#">Features</a></li>
-												<li><a href="#">Attractive<span class="new">New</span></a></li>
-												<li><a href="#">Testimonials</a></li>
-												<li><a href="#">Videos</a></li>
-												<li><a href="#">Footers</a></li>
-											</ul>
-										</div>
-									</div>
-							
-									<div class="col-lg-4 col-md-4">
-										<div class="footer_widget">
-											<h4 class="widget_title">Company</h4>
-											<ul class="footer-menu">
-												<li><a href="#">About</a></li>
-												<li><a href="#">Blog</a></li>
-												<li><a href="#">Pricing</a></li>
-												<li><a href="#">Affiliate</a></li>
-												<li><a href="#">Login</a></li>
-												<li><a href="#">Changelog<span class="update">Update</span></a></li>
-											</ul>
-										</div>
-									</div>
-									
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<div class="footer-bottom">
-					<div class="container">
-						<div class="row align-items-center">
-							<div class="col-lg-12 col-md-12 text-center">
-								<p class="mb-0">© 2021 SkillUp. Designd By <a href="../index.htm">ThemezHub</a>.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</footer>
+			<?php
+			include 'footer.php';
+			?>
 			<!-- ============================ Footer End ================================== -->
 			
 			<!-- Log In Modal -->
@@ -825,7 +455,7 @@ $photo=$_SESSION['photo'];
 											<label for="admin" class="checkbox-custom-label">Admin</label>
 										</div>
 										<div class="col-xl-4 col-lg-4 col-4">
-											<input id="student" class="checkbox-custom" name="student" type="checkbox" checked="">
+											<input id="student" class="checkbox-custom" name="student" type="checkbox" checked>
 											<label for="student" class="checkbox-custom-label">Student</label>
 										</div>
 										<div class="col-xl-4 col-lg-4 col-4">
@@ -834,7 +464,7 @@ $photo=$_SESSION['photo'];
 										</div>
 									</div>
 									
-									<div class="form-group">
+									<div class="form-group">	
 										<button type="submit" class="btn btn-md full-width theme-bg text-white">Login</button>
 									</div>
 									

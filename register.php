@@ -3,19 +3,24 @@
  if(isset($_POST['register']))
  {
 	$name=$_POST['name'];
+	$name=strtoupper($name);
 	$dob=$_POST['dob'];
+	$gender=$_POST['gender'];
 	$regno=$_POST['regno'];
+	$regno=strtoupper($regno);
 	$branch=$_POST['branch'];
 	$year=$_POST['year'];
+	$sem=$_POST['sem'];
 	$mobile=$_POST['mobile'];
 	date_default_timezone_set("Asia/Calcutta");   //India time (GMT+5:30)
 	$time=date('d-m-Y H:i:s');
 	$photo=$regno.date("d/m/Y").$time ;
-	$query="insert into register(name,dob,reg_no,branch,year,mobile,photo) values('$name','$dob','$regno','$branch','$year','$mobile' ,'$photo')";
+	$query="INSERT INTO `students`(`name`, `dob`, `gender`, `reg_no`, `branch`, `year`, `semester`, `mobile`) VALUES ('$name','$dob','$gender','$regno','$branch','$year','$sem','$mobile')";
 	$res=mysqli_query($con,$query);
      if($res)
 	 {
 		echo "<script>alert('Data inserted successfully')</script>";
+		echo"<script>document.location.href='login.php'</script>";
 	 }
 	 else
 	 {
@@ -79,17 +84,17 @@
 											<div class="Lpo09"><h4>Registration Form</h4></div>
 											<div class="form-group">
 												<label>Name</label>
-												<input type="text" name="name" class="form-control" placeholder="Enter your Full Name" >
+												<input type="text" name="name" class="form-control" placeholder="Enter your Full Name" required>
 											</div>
 											<div class="form-group">
 												<label>Date Of Birth</label>
-												<input type="date" name="dob"class="form-control" placeholder="Enter your Date Of Birth" >
+												<input type="date" name="dob"class="form-control" placeholder="Enter your Date Of Birth" required>
 											</div>
 											<div class="form-group">
 											   <label>Gender</label>
-											<select name="year" name="year" class="form-control"  id="year" >
+											<select name="gender" class="form-control"  id="gender" requires>
 											<option value="0" >Select Gender</option>
-											<option value="male">Male</option>
+											    <option value="male">Male</option>
                                                 <option value="female">Female</option>
                                                 <option value="others">Others</option>
                                                 <!-- <option value="4">4</option> -->
@@ -97,10 +102,10 @@
                                             </div>
 											<div class="form-group">
 												<label>Registration Number</label>
-												<input type="text" name="regno"  class="form-control" placeholder="Enter your Register number" >
+												<input type="text" name="regno" maxlength=10 class="form-control" placeholder="Enter your Register number" required >
 											</div>
 											<label>Branch</label>
-											<select name="branch"name="branch" class="form-control"  id="branch" >
+											<select name="branch"name="branch" class="form-control"  id="branch" required>
 												<option value="0" >Select Branch</option>
 												<option value="CSE">CSE</option>
                                                 <option value="IT">IT</option>
@@ -114,9 +119,9 @@
                                                </select>
 										    <div class="form-group">
 											   <label>Year</label>
-											<select name="year" name="year" class="form-control"  id="year" >
+											<select name="year" class="form-control"  id="year" required>
 											<option value="0" >Select Year</option>
-											<option value="1">1st Year</option>
+											    <option value="1">1st Year</option>
                                                 <option value="2">2nd Year</option>
                                                 <option value="3">3nd Year</option>
                                                 <option value="4">4th Year</option>
@@ -124,7 +129,7 @@
                                             </div>
 											<div class="form-group">
 											   <label>Semester</label>
-											<select name="year" name="year" class="form-control"  id="year" >
+											<select name="sem" class="form-control"  id="sem" required>
 											<option value="0" >Select Semester</option>
 											<option value="1">1st Semester</option>
                                                 <option value="2">2nd Semester</option>
@@ -132,11 +137,15 @@
                                             </div>
 											<div class="form-group">
 												<label>Mobile</label>
-												<input type="number"name="mobile" class="form-control" placeholder="Enter your Mobile Number" >
+												<input type="text" name="mobile" maxlength=10 class="form-control" placeholder="Enter your Mobile Number" required>
 											</div>
 											<div  >
 												<button type="submit"class="btn btn-primary" name="register">Register</button>
-												<a  href="login.php"><input type="button" class="btn btn-primary"name="Login" value="Login "></input></a>
+												<div>
+												<p>if you already registered</p>
+												<a  href="login.php">login here</input></a>
+</div>
+                                              
 											</div>
 										</div>
 										

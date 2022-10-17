@@ -140,80 +140,86 @@
 			</section>-->
 			<h1 class="row justify-content-center">LeaderBoard</h1>
             <div class="container">
-            <table class="table table-hover">
+            <div class="table-responsive">
+			<table id="myTable" class="table table-striped wishlist">
+							
+						
   <thead>
     <tr>
-      <th scope="col">Sno</th>
+      <th scope="col">Sl.No</th>
       <th scope="col">Events</th>
-      <th scope="col">No Events Conducted</th>
+      <th scope="col">No of Events Conducted</th>
       <th scope="col">Score</th>
+	  
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">1</th>
+      <th scope="row">01</th>
       <td>Faculty Development Programmmes</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+     
+      
     </tr>
     <tr>
-      <th scope="row">2</th>
+      <th scope="row">02</th>
       <td>Professional Skilling Programmes</td>
-      <td>Thornton</td>
-      <td>@fat</td>
+      
+    </tr>
+    
+    <tr>
+      <th scope="row">03</th>
+      <td>Skilling Programs</td>
+     
+      
     </tr>
     <tr>
-      <th scope="row">3</th>
-      <td>Skilling Programs</td>
-      <td>@twitter</td>
-    </tr>
-	<tr>
-      <th scope="row">4</th>
-      <td>Skilling Programs</td>
-      <td>@twitter</td>
-    </tr>
-	<tr>
-      <th scope="row">5</th>
+      <th scope="row">04</th>
       <td>School Teacher Awareness Programmes</td>
-      <td>@twitter</td>
+      
     </tr>
-	<tr>
-      <th scope="row">6</th>
+    <tr>
+      <th scope="row">05</th>
       <td>Open Day For School Student</td>
-      <td>@twitter</td>
+      
+      
     </tr>
-	<tr>
-      <th scope="row">7</th>
+    <tr>
+      <th scope="row">06</th>
       <td>Annual Conference</td>
-      <td>@twitter</td>
+     
+      
     </tr>
-	<tr>
-      <th scope="row">8</th>
+    <tr>
+      <th scope="row">07</th>
       <td>Bootcamps</td>
-      <td>@twitter</td>
+      
     </tr>
-	<tr>
-      <th scope="row">9</th>
+    <tr>
+      <th scope="row">08</th>
       <td>Ideation Workshops</td>
-      <td>@twitter</td>
+      
+      
     </tr>
-	<tr>
-      <th scope="row">10</th>
+    <tr>
+      <th scope="row">09</th>
       <td>Internships</td>
-      <td>@twitter</td>
+     
+      
     </tr>
-	<tr>
-      <th scope="row">11</th>
+    <tr>
+      <th scope="row">10</th>
       <td>Awareness Workshops For Industry</td>
-      <td>@twitter</td>
+      
     </tr>
-	<tr>
-      <th scope="row">12</th>
+    <tr>
+      <th scope="row">11</th>
       <td>Projects By School Student</td>
-      <td>@twitter</td>
+      
+      
     </tr>
   </tbody>
 </table>
+</div>
 </div>
 <!-- ============================ Footer Start ================================== -->
 			<?php

@@ -8,10 +8,205 @@
 		 
         <!-- Custom CSS -->
         <link href="assets/css/styles.css" rel="stylesheet">
-		<link  href="assets/css/leaderboard.css">
+		
+		<link  href="assets/css/plugin.css">
+		<link  href="assets/css/temp.css">
+		<link  href="assets/css/temp-bot.css">
+
+
+
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+		<style>
+        .banner {
+  position: relative;
+  margin-top: 135px;
+  overflow: hidden;
+  background-image: -webkit-gradient(linear, left top, right top, from(#e9f3fa), to(#fbfbfb));
+  background-image: linear-gradient(90deg, #e9f3fa 0%, #fbfbfb 100%);
+  padding: 100px 0 40px;
+}
+
+.banner .banner-content {
+  position: relative;
+}
+
+.banner .banner-content .banner-image {
+  position: relative;
+  padding: 0 40px;
+}
+
+.banner .banner-content .banner-image img {
+  position: relative;
+  -webkit-animation: bgshape 4s infinite;
+          animation: bgshape 4s infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+
+.banner-main {
+  position: relative;
+  padding-top: 135px;
+  overflow: hidden;
+}
+
+.banner-main .h2-slider-list {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 150px 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.banner-main .h2-slider-list .slide-contain {
+  position: relative;
+  color: #fff;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  font-size: 22px;
+  z-index: 1;
+}
+
+@media (max-width: 991px) {
+  .banner-main {
+    padding-top: 77px;
+  }
+  .banner-main .h2-slider-list .slide-contain {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .browse-main .browse-list {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+  .banner-main .h2-slider-list {
+    text-align: center;
+  }
+  .banner-main .h2-slider-list .slide-contain h1 {
+    font-size: 38px;
+  }
+  .banner-main .h2-slider-list .slide-contain p {
+    font-size: 18px;
+  }
+  .banner-main .h2-slider-list .slide-contain .btn {
+    padding: 21px 21px 19px;
+  }
+  .banner h1 {
+    font-size: 38px;
+  }
+}
+
+.svg-img-rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.banner-slider .main-slide-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-size: cover;
+  background-position: center;
+  -webkit-transform-origin: 0;
+          transform-origin: 0;
+  -webkit-animation: kbrns_zoomOutIn 35s linear 0s infinite alternate;
+          animation: kbrns_zoomOutIn 35s linear 0s infinite alternate;
+}
+
+
+.overlay-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #204066;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  opacity: 0.8;
+}
+
+@-webkit-keyframes bgshape {
+  0% {
+    top: 0px;
+  }
+  25% {
+    top: 10px;
+  }
+  50% {
+    top: 30px;
+  }
+  75% {
+    top: 10px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes bgshape {
+  0% {
+    top: 0px;
+  }
+  25% {
+    top: 10px;
+  }
+  50% {
+    top: 30px;
+  }
+  75% {
+    top: 10px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .banner {
+    padding-bottom: 60px;
+  }
+  .banner::before {
+    right: -200px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .main_header_area .topbar-wrap {
+    display: none;
+  }
+  .banner {
+    margin-top: 77px;
+    overflow: hidden;
+  }
+  .banner:after {
+    background-position: center;
+  }
+  .banner .banner-ct-wrap {
+    padding: 0 0 30px;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 639px) {
+  .banner .slider .swiper-container-vertical > .swiper-pagination-bullets {
+    display: none;
+  }
+}
+        </style>
 
     </head>
 	
@@ -31,41 +226,76 @@
 
 			
 			<!-- ============================ Hero Banner  Start================================== -->
-			<div class="hero_banner image-cover image_bottom">
-				<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-lg-9 col-md-10 col-sm-12">
-							<div class="simple-search-wrap">
-								<div class="hero_search-2 text-center">
+			
+<section class="banner-main">
+      <div class="banner-content">
+        <div class="slider banner-slider">
+          <div class="h2-slider-list">
+            <div class="main-slide-image" style="background-image: url(assets/img/sl2.png)"></div>
+            <div class="container">
+              <div class="slide-contain">
+<style>
+			  h4 {
+    color: #ffffff;
+}</style>
+                <h4 class="extream mb-3"> </h4>
 				
-				<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-					<div class="carousel-inner">
-					  <div class="carousel-item active">
-						<img src="https://pranavtej.github.io/aicte-ideal-lab/assets/img/slider.png" class="d-block w-100" alt="...">
-					  </div>
-					  <div class="carousel-item">
-						<img src="https://pranavtej.github.io/aicte-ideal-lab/assets/img/slider.png" class="d-block w-100" alt="...">
-					  </div>
-					  <div class="carousel-item">
-						<img src="https://pranavtej.github.io/aicte-ideal-lab/assets/img/slider.png" class="d-block w-100" alt="...">
-					  </div>
-					</div>
-					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-					  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					  <span class="visually-hidden">Previous</span>
-					</button>
-					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-					  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-					  <span class="visually-hidden">Next</span>
-					</button>
-				  </div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	</div>
-	</div>
+                <h1 class="cl-white mt-2 wow fadeInDown"></h1>
+                <p class=""></p>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+                <div class="slide-btn mt-4">
+                  <a href="aboutus.html" class="btn"></a>
+                </div>
+              </div>
+            </div>
+            <div class=""></div>
+          </div>
+          <div class="h2-slider-list">
+            <div class="main-slide-image" style="background-image: url(assets/img/sl1.png)"></div>
+            <div class="container">
+              <div class="slide-contain">
+                <h4 class="blg_title"></h4>
+                <h1 class="blg_title"></h1>
+                <p class=""></p>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+                <div class="slide-btn mt-4">
+                  <a href="contact.html" class="btn"></a>
+                </div>
+              </div>
+            </div>
+            <div class=""></div>
+          </div>
+          <div class="h2-slider-list">
+            <div class="main-slide-image" style="background-image: url(assets/img/aicte1.jpg)"></div>
+            <div class="container">
+              <div class="slide-contain">
+                <h4 class="blg_title"></h4>
+                <h1 class="cl-white mt-2 wow fadeInDown"></h1>
+                <p class=""></p>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+                <div class="slide-btn mt-4">
+                  <a href="contact.html" class="btn"></a>
+                </div>
+              </div>
+            </div>
+            <div class="overlay-banner"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 			<!-- ============================ Hero Banner End ================================== -->
 			<!-- ================================ Tag Award ================================ -->
 			<!-- <section class="p-0">
@@ -165,6 +395,11 @@
 		<script src="assets/js/summernote.min.js"></script>
 		<script src="assets/js/metisMenu.min.js"></script>	
 		<script src="assets/js/custom.js"></script>
+		<script src="assets/js/custom-swiper.js"></script>
+		<script src="assets/js/custom-pluggin.js"></script>
+		<script src="assets/js/custom-main.js"></script>
+		<script src="assets/js/custom-nav.js"></script>
+		
 		<!-- ============================================================== -->
 		<!-- This page plugins -->
 		<!-- ============================================================== -->		

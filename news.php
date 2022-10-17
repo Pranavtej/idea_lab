@@ -1,3 +1,8 @@
+<?php
+  include 'connect.php';
+
+
+?>
 <!DOCTYPE html>
 <html lang="zxx">
 	<head>
@@ -109,7 +114,51 @@
 				</div>
 			</section> -->
 			<!-- ================================ Tag Award ================================ -->
-			
+			<div class="container">
+   
+    <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">title</th>
+      <th scope="col">description</th>
+      <th scope="col">photo</th>
+      <th scope="col">time</th>
+      
+      
+    </tr>
+  </thead>
+  <tbody>
+    <?php
+    
+    $q="Select * from `news`";
+    $res=mysqli_query($con,$q);
+    if($res)
+        {
+          while($r=mysqli_fetch_assoc($res))
+            {
+              $title=$r['title'];
+              $description=$r['description'];
+              $photo=$r['photo'];
+              $time=$r['time'];
+              
+              echo '<tr>
+              <th scope="row">'.$title.'</th>
+              <td>'.$description.'</td>
+              <td>'.$photo.'</td>
+              <td>'.$time.'</td>
+             
+              <td>
+             
+             </td>
+              </tr>';
+            }
+        }
+    ?>
+        
+  </tbody>
+</table>
+
+</div>
 			<!-- ============================ Our Awards Start ================================== -->
 			<!-- <section class="p-0">
 				<div class="container">
@@ -143,7 +192,7 @@
 			<!-- ============================ Footer End ================================== -->
 			
 			<!-- Log In Modal -->
-		
+			
 			<!-- End Modal -->
 			
 			<a id="back2Top" class="top-scroll" title="Back to top" href="#"><i class="ti-arrow-up"></i></a>

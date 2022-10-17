@@ -1,3 +1,9 @@
+<?php
+ include 'connect.php';
+ ?>
+
+
+
 <!DOCTYPE html>
 <html lang="zxx">
 	<head>
@@ -67,40 +73,52 @@
 			<!-- ============================ Hero Banner End ================================== -->
 			<div class="text-center"><h2>Patent Details</h2></div>
 			<div class="container"> 
-			<table class="table">
-				<thead>
-				  <tr>
-					
-					<th scope="col">Patent Status</th>
-					<th scope="col">Patent Appicant IDEALAB ID</th>
-					<th scope="col">Patent Application Number</th>
-					<th scope="col">Receipt of  (CBR)</th>
-					<th scope="col">Date of Application Filling</th>
-					
-				  </tr>
-				</thead>
-				<tbody>
-				  <tr>
-					
-					<td>Registered</td>
-					<td>IDEA202000466</td>
-					<td>202241018023</td>
-					<td>14/2022</td>
-					<td>2022-03-28</td>
-					
-				  </tr>
-				  <tr>
-					
-					<td>Registered</td>
-					<td>IDEA202000466</td>
-					<td>202241022833</td>
-					<td>15384</td>
-					<td>2022-04-18</td>
-				  </tr>
-				
-				</tbody>
-			  </table>
-			</div>
+			<div class="container">
+   
+   <table class="table table-striped">
+ <thead>
+   <tr>
+	 <th scope="col">patent_status</th>
+	 <th scope="col">applicant_id</th>
+	 <th scope="col">applicant_no</th>
+	 <th scope="col">	reciept_of_cbr</th>
+	 <th scope="col">date</th>
+	 
+   </tr>
+ </thead>
+ <tbody>
+   <?php
+   
+   $q="Select * from `patents`";
+   $res=mysqli_query($con,$q);
+   if($res)
+	   {
+		 while($r=mysqli_fetch_assoc($res))
+		   {
+			 $patent_status=$r['patent_status'];
+			 $applicant_id=$r['applicant_id'];
+			 $applicant_no=$r['applicant_no'];
+			 $reciept_of_cbr=$r['reciept_of_cbr'];
+			 $date=$r['date'];
+			 echo '<tr>
+			 <th scope="row">'.$patent_status.'</th>
+			 <td>'.$applicant_id.'</td>
+			 <td>'.$applicant_no.'</td>
+			 <td>'.$reciept_of_cbr.'</td>
+			 <td>'.$date.'</td>
+			 <td>
+			
+			</td>
+			 </tr>';
+		   }
+	   }
+   ?>
+	   
+ </tbody>
+</table>
+
+</div>
+</div>
 <!-- ============================ Footer Start ================================== -->
 			<?php
 			include 'footer.php';

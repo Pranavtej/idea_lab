@@ -197,17 +197,13 @@
                                 <a href="signup.html" class="text-white">Get Started</a> -->
                             </li> 
                         </ul>
-                        <ul class="nav-menu nav-menu-social align-to-right">
+                        <!-- <ul class="nav-menu nav-menu-social align-to-right">
 								
-								<li>
-									<a href="#" class="alio_green" data-toggle="modal" data-target="#login">
-										<i class="fas fa-sign-in-alt mr-1"></i><span class="dn-lg">Admin Login</span>
-									</a>
-								</li>
+								
 								<li class="add-listing theme-bg">
 									<a href="register.php" class="text-white">Register</a>
 								</li>
-							</ul>
+							</ul> -->
                     </div>
                 </nav>
             </div>

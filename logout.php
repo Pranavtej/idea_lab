@@ -15,7 +15,7 @@ $query="update   log set out_time='$ct' where regno='$reg' and intime='$t'";
 	 {
 		echo "<script>alert('you Have Loged Out Please try Again')</script>";
         echo"<script>document.location.href='login.php'</script>";
-	 }
+	 }1
 
 
 ?>

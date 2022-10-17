@@ -63,147 +63,112 @@
 	
 	</div>
 	</div>
-			<!-- ============================ Hero Banner End ================================== -->
-			<!-- ================================ Tag Award ================================ -->
-			<!-- <section class="p-0">
+			
+			<section class="min">
 				<div class="container">
+				
 					<div class="row justify-content-center">
-						<div class="col-lg-12 col-md-12 col-sm-12">
-							<div class="crp_box fl_color ovr_top">
-								<div class="row align-items-center">
-									<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-										<div class="dro_140">
-											<div class="dro_141 de"><i class="fa fa-journal-whills"></i></div>
-											<div class="dro_142">
-												<h6>200+ Students</h6>
-												<p>Body of Aicete ideal Lab</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-										<div class="dro_140">
-											<div class="dro_141 de"><i class="fa fa-business-time"></i></div>
-											<div class="dro_142">
-												<h6>Lifetime Access</h6>
-												<p>Duis aute irure dolor in voluptate velit esse cillum labore .</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-										<div class="dro_140">
-											<div class="dro_141 de"><i class="fa fa-user-shield"></i></div>
-											<div class="dro_142">
-												<h6>800k+ Enrolled</h6>
-												<p>Duis aute irure dolor in voluptate velit esse cillum labore .</p>
-											</div>
-										</div>
-									</div>
-								</div>
+						<div class="col-lg-7 col-md-8">
+							<div class="sec-heading center">
+								<h2>Ideal Lab & <span class="theme-cl">Gallery</span></h2>
 							</div>
 						</div>
 					</div>
-				
-				</div>
-			</section> -->
-			<!-- ================================ Tag Award ================================ -->
-			
-			<!-- ============================ Our Awards Start ================================== -->
-			<h1 class="row justify-content-center"> Gallery</h1>
-			<div class="row justify-content-center">
-			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-							<div class="blg_grid_box">
-								<div class="blg_grid_thumb">
-									<a href="assets/img/aicte1.jpg"><img src="assets/img/aicte1.jpg" class="img-fluid" alt=""></a>
-								</div>
-								
-								<div class="crs_grid_foot">
-									<div class="crs_flex">
-										<div class="crs_fl_first">
-											<div class="crs_tutor">
-												<div class="crs_tutor_thumb"><a href="instructor-detail.html"><img src="" class="img-fluid circle" alt=""></a></div>
-											</div>
-										</div>
-										<div class="crs_fl_last">
-											<div class="foot_list_info">
-												
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-                   <!-- picture 2-->
+					
+					<div class="row justify-content-center">
+						
+						<!-- Single Item -->
 						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
 							<div class="blg_grid_box">
 								<div class="blg_grid_thumb">
-									<a href="assets/img/aicte3.jpg"><img src="assets/img/aicte3.jpg" class="img-fluid" alt=""></a>
+									<a ><img src="assets/img/g-1.jpg" class="img-fluid" alt="" /></a>
 								</div>
 								
-								<div class="crs_grid_foot">
-									<div class="crs_flex">
-										<div class="crs_fl_first">
-											<div class="crs_tutor">
-												<div class="crs_tutor_thumb"><a href="instructor-detail.html"><img src="" class="img-fluid circle" alt=""></a></div>
-											</div>
-										</div>
-										<div class="crs_fl_last">
-											<div class="foot_list_info">
-												
-											</div>
-										</div>
-									</div>
-								</div>
 							</div>
 						</div>
-				<!--picture 3-->
-				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+						
+						<!-- Single Item -->
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
 							<div class="blg_grid_box">
 								<div class="blg_grid_thumb">
-									<a href="assets/img/aicte2.jpg"><img src="assets/img/aicte2.jpg" class="img-fluid" alt=""></a>
+									<a ><img src="assets/img/g-2.jpg" class="img-fluid" alt="" /></a>
 								</div>
 								
-								<div class="crs_grid_foot">
-									<div class="crs_flex">
-										<div class="crs_fl_first">
-											<div class="crs_tutor">
-												<div class="crs_tutor_thumb"><a href="instructor-detail.html"><img src="" class="img-fluid circle" alt=""></a></div>
-											</div>
-										</div>
-										<div class="crs_fl_last">
-											<div class="foot_list_info">
-												
-											</div>
-										</div>
-									</div>
-								</div>
 							</div>
 						</div>
-                 </div>
-				 <!--picture -->
-				 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+						
+						<!-- Single Item -->
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
 							<div class="blg_grid_box">
 								<div class="blg_grid_thumb">
-									<a href="assets/img/woodcutter.jpg"><img src="assets/img/woodcutter.jpg" class="img-fluid" alt=""></a>
+									<a ><img src="assets/img/g-3.jpg" class="img-fluid" alt="" /></a>
 								</div>
 								
-								<div class="crs_grid_foot">
-									<div class="crs_flex">
-										<div class="crs_fl_first">
-											<div class="crs_tutor">
-												<div class="crs_tutor_thumb"><a href="instructor-detail.html"><img src="" class="img-fluid circle" alt=""></a></div>
-											</div>
-										</div>
-										<div class="crs_fl_last">
-											<div class="foot_list_info">
-												
-											</div>
-										</div>
-									</div>
-								</div>
 							</div>
 						</div>
-                 </div>
-
+						
+						<!-- Single Item -->
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+							<div class="blg_grid_box">
+								<div class="blg_grid_thumb">
+									<a ><img src="assets/img/g-4.jpg" class="img-fluid" alt="" /></a>
+								</div>
+								
+							</div>
+						</div>
+						
+						<!-- Single Item -->
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+							<div class="blg_grid_box">
+								<div class="blg_grid_thumb">
+									<a ><img src="assets/img/g-5.jpg" class="img-fluid" alt="" /></a>
+								</div>
+								
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+							<div class="blg_grid_box">
+								<div class="blg_grid_thumb">
+									<a ><img src="assets/img/g-6.jpg" class="img-fluid" alt="" /></a>
+								</div>
+								
+							</div>
+						</div>
+						
+						<!-- Single Item -->
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+							<div class="blg_grid_box">
+								<div class="blg_grid_thumb">
+									<a ><img src="assets/img/g-7.png" class="img-fluid" alt="" /></a>
+								</div>
+								
+							</div>
+						</div>
+						<!-- Single Item -->
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+							<div class="blg_grid_box">
+								<div class="blg_grid_thumb">
+									<a ><img src="assets/img/g-8.png" class="img-fluid" alt="" /></a>
+								</div>
+								
+							</div>
+						</div>
+						
+						
+						<!-- Single Item -->
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+							<div class="blg_grid_box">
+								<div class="blg_grid_thumb">
+									<a ><img src="assets/img/g-9.png" class="img-fluid" alt="" /></a>
+								</div>
+								
+							</div>
+						</div>
+						
+					</div>
+					
+				</div>
+			</section>
 <!-- ============================ Footer Start ================================== -->
 			<?php
 			include 'footer.php';

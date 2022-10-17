@@ -12,7 +12,7 @@
      {
         $_SESSION['name']=$details['name'];
         $_SESSION['deg']=$details['designation'];
-        $_SESSION['photo']=$details['photo'];
+        $_SESSION['photo_admin']=$details['photo'];
       
         echo" <script>document.location='dashboard.php'</script>";
      }
@@ -96,7 +96,7 @@
 			<!-- ============================ Login Wrap ================================== -->
 			
 			<!-- ============================ Footer Start ================================== -->
-			<footer class="dark-footer skin-dark-footer style-2">
+			<!-- <footer class="dark-footer skin-dark-footer style-2">
 				<div class="footer-middle">
 					<div class="container">
 						<div class="row">
@@ -177,7 +177,7 @@
 						</div>
 					</div>
 				</div>
-			</footer>
+			</footer> -->
 			<!-- ============================ Footer End ================================== -->
 			
 			<!-- Log In Modal -->

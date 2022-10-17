@@ -111,31 +111,20 @@
 			<!-- ================================ Tag Award ================================ -->
 			
 			<!-- ============================ Our Awards Start ================================== -->
-			<!-- <section class="p-0">
-				<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-lg-12 col-md-12 col-sm-12">
-							<div class="crp_box ovr_top">
-								<div class="row align-items-center m-0">
-									<div class="col-xl-2 col-lg-3 col-md-4 col-sm-12">
-										<div class="crp_tags"><h6>Over 700+ Cources in one place</h6></div>
-									</div>
-									<div class="col-xl-10 col-lg-9 col-md-8 col-sm-12">
-										<div class="part_rcp">
-											<ul>
-												<li><div class="crp_img"><img src="assets/img/lg-1.png" class="img-fluid" alt=""></div></li>
-												<li><div class="crp_img"><img src="assets/img/lg-5.png" class="img-fluid" alt=""></div></li>
-												<li><div class="crp_img"><img src="assets/img/lg-6.png" class="img-fluid" alt=""></div></li>
-												<li><div class="crp_img"><img src="assets/img/lg-7.png" class="img-fluid" alt=""></div></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+
+<div class="container">
+<video width="400" controls>
+  <source src="mov_bbb.mp4" type="video/mp4">
+  <source src="mov_bbb.ogg" type="video/ogg">
+  Your browser does not support HTML video.
+</video>
+
+<p>
+Video courtesy of 
+<a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.
+</p>
+</div>
+
 <!-- ============================ Footer Start ================================== -->
 			<?php
 			include 'footer.php';

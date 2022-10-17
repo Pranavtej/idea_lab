@@ -8,7 +8,7 @@
 		 
         <!-- Custom CSS -->
         <link href="assets/css/styles.css" rel="stylesheet">
-		<link  href="assets/css/leaderboard.css">
+	<!-- <link  href="assets/css/leaderboard.css"> -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </head>
@@ -26,9 +26,6 @@
 			<!-- ============================================================== -->
 			<!-- Top header  -->
 			<!-- ============================================================== -->
-			
-			
-			<!-- ============================ Hero Banner  Start================================== -->
 			<div class="hero_banner image-cover image_bottom">
 			<div class="container">
 				<div class="row justify-content-center">
@@ -39,14 +36,17 @@
 			<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 				<div class="carousel-inner">
 				  <div class="carousel-item active">
-					<img src="assets/img/srkrslider.png" class="d-block w-100" alt="...">
+					<img src="assets/img/banner1.jpg" class="d-block w-100" alt="...">
 				  </div>
 				  <div class="carousel-item">
-					<img src="assets/img/srkr_pr.jpg" class="d-block w-100" alt="...">
+					<img src="assets/img/banner2.jpg" class="d-block w-100" alt="...">
 				  </div>
-				  <div class="carousel-item">
-					<img src="assets/img/slider2.jpg" class="d-block w-100" alt="...">
+				  <!-- <div class="carousel-item">
+					<img src="assets/img/sl1.png" class="d-block w-100" alt="...">
 				  </div>
+                  <div class="carousel-item">
+					<img src="assets/img/sl2.png" class="d-block w-100" alt="...">
+				  </div> -->
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
 				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -64,6 +64,9 @@
 
 </div>
 </div>
+	
+			
+			<!-- ============================ Hero Banner  Start================================== -->
 	
 
 			  <!-- ============================ Hero Banner End ================================== -->
@@ -699,7 +702,7 @@
 					<div class="row justify-content-center">
 						<div class="col-lg-7 col-md-8">
 							<div class="sec-heading center">
-								<h2>Latest News & <span class="theme-cl">Articles</span></h2>
+								<h2>Idea Lab & <span class="theme-cl">News</span></h2>
 								<p>AICTE IDEA labs to foster creativity, experiential
 									learning on campus
 									</p>
@@ -713,13 +716,12 @@
 						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
 							<div class="blg_grid_box">
 								<div class="blg_grid_thumb">
-									<a href="blog-detail.html"><img src="assets/img/sample.png" class="img-fluid" alt=""></a>
+									<a ><img src="assets/img/g-1.jpg" class="img-fluid" alt=""></a>
 								</div>
 								<div class="blg_grid_caption">
 									<!-- <div class="blg_tag"><span>Marketing</span></div> -->
-									<div class="blg_title"><h4><a href="blog-detail.html">Acite idea Lab</a></h4></div>
-									<div class="blg_desc"><p>AICTE IDEA labs to foster creativity, experiential
-										learning on campus
+									<div class="blg_title"><h4>Wood Cutter</h4></div>
+									<div class="blg_desc"><p>A wood cutter can either be a tool that cuts wood or a person that cuts wood, otherwise known as a lumberjack. Wood cutting tools are as old and human civilization. 
 										</p></div>
 								</div>
 								<div class="crs_grid_foot">
@@ -746,13 +748,12 @@
 						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
 							<div class="blg_grid_box">
 								<div class="blg_grid_thumb">
-									<a href="blog-detail.html"><img src="assets/img/sample.png" class="img-fluid" alt=""></a>
+									<a><img src="assets/img/g-2.jpg" class="img-fluid" alt=""></a>
 								</div>
 								<div class="blg_grid_caption">
 									<!-- <div class="blg_tag"><span>Business</span></div> -->
-									<div class="blg_title"><h4><a href="blog-detail.html">Aicte idea Lab</a></h4></div>
-									<div class="blg_desc"><p>AICTE IDEA labs to foster creativity, experiential
-										learning on campus
+									<div class="blg_title"><h4><a >3D printer</a></h4></div>
+									<div class="blg_desc"><p>3D printer in your home or office, you have the key to unlock a world of creativity. Find the right 3D Printers that fits your budget and needs. 
 										</p></div>
 								</div>
 								<div class="crs_grid_foot">
@@ -779,13 +780,12 @@
 						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
 							<div class="blg_grid_box">
 								<div class="blg_grid_thumb">
-									<a href="blog-detail.html"><img src="assets/img/sample.png" class="img-fluid" alt=""></a>
+									<a href="blog-detail.html"><img src="assets/img/g-3.jpg" class="img-fluid" alt=""></a>
 								</div>
 								<div class="blg_grid_caption">
 									<!-- <div class="blg_tag"><span>Accounting</span></div> -->
-									<div class="blg_title"><h4><a href="blog-detail.html">Aicte idea lab</a></h4></div>
-									<div class="blg_desc"><p>AICTE IDEA labs to foster creativity, experiential
-										learning on campus
+									<div class="blg_title"><h4>Laser cutting</h4></div>
+									<div class="blg_desc"><p>Gateway Laser specializes in laser cutting small parts at very tight tolerances. Our high-resolution laser microcutting process results in better edge quality.
 										</p></div>
 								</div>
 								<div class="crs_grid_foot">
@@ -1074,9 +1074,10 @@
 			<!-- ============================ College Profile================================== -->
 			<div class="container">
                 <h2>College Profile<span class="theme-cl"></span></h2>
-                <p>Sagi Rama Krishnam Raju Engineering College, established in 1980, is a self-financed academic institution of coeducation striving to provide a high quality technical education to engineering aspirants. Being one of the premier and well-established technical institutions of the country, it continues to render service to the nation and the world at large with its alumni holding highly prestigious positions and making substantial contribution. The president of the institution Sri. S. Prasada Raju carries forward the vision of his father Late Sri Sagi Rama Krishnam Raju , a philanthropist, driving the institution on the academic path of excellence. The college is replete with lush coconut trees spanning across a plot area of 30 acres at China Amiram, Bhimavaram, on Bhimavaram-Vijayawada state highway and it is also well-connected to all other places by road and rail transport.</p>
-               <p>The college offers clusters of elegant and capacious buildings with state-of-the-art laboratories, class rooms, seminar halls and other amenities coupled with eco-friendly ambience on the campus for efficacious pedagogical practices.</p>
-			   <p>S.R.K.R. Engineering College was established with a mission to develop the institution into a world-class centre of excellence in the field of technical education that fosters research and essentials of employability and strives for preeminence amongst the premier institutions with high commitment to the socio-ecological well-being of the nation.</p>
+               <p> Sagi Rama Krishnam Raju Engineering College, established in 1980, is a self-financed academic institution of coeducation striving to provide a high quality technical education to engineering aspirants. Being one of the premier and well-established technical institutions of the country, it continues to render service to the nation and the world at large with its alumni holding highly prestigious positions and making substantial contribution. The president of the institution Sri. S. Prasada Raju carries forward the vision of his father Late Sri Sagi Rama Krishnam Raju , a philanthropist, driving the institution on the academic path of excellence. The college is replete with lush coconut trees spanning across a plot area of 30 acres at China Amiram, Bhimavaram, on Bhimavaram-Vijayawada state highway and it is also well-connected to all other places by road and rail transport.</h4><p>
+              <p> The college offers clusters of elegant and capacious buildings with state-of-the-art laboratories, class rooms, seminar halls and other amenities coupled with eco-friendly ambience on the campus for efficacious pedagogical practices.</h5></p>
+			   <p>S.R.K.R. Engineering College was established with a mission to develop the institution into a world-class centre of excellence in the field of technical education that fosters research and essentials of employability and strives for preeminence amongst the premier institutions with high commitment to the socio-ecological well-being of the nation.</h5></p>
+			   
             </div>
 			<!-- ============================ Footer Start ================================== -->
 			<?php

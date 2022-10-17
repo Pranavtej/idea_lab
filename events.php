@@ -1,4 +1,11 @@
 
+<?php
+ include 'connect.php';
+ ?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="zxx">
 	<head>
@@ -10,7 +17,7 @@
         <!-- Custom CSS -->
         <link href="assets/css/styles.css" rel="stylesheet">
 		<link  href="assets/css/leaderboard.css">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+		<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
     </head>
@@ -30,7 +37,8 @@
 			
 			
 			<!-- ============================ Hero Banner  Start================================== -->
-			<div class="hero_banner image-cover image_bottom">
+		<?php	include'banner.php' ;?>
+			<!-- <div class="hero_banner image-cover image_bottom">
 				<div class="container">
 					<div class="row justify-content-center">
 						<div class="col-lg-9 col-md-10 col-sm-12">
@@ -65,43 +73,136 @@
 	
 	</div>
 	</div>
-		
+	in
+		 -->
 			<!-- Tabs navs -->
 			
-			<div class="container"></div>
-			<div id="exTab1" class="container">	
-			<ul  class="nav nav-pills">
-						<li class="active">
-					<a  href="#1a" data-toggle="tab">Upcomming events</a>
-						</li>
-						<li class="list-style"><a href="#2a" data-toggle="tab">Completed Events</a>
-						</li>
-					</ul>
+			<div class="row">
+					<div class="container">
+						<div class="col-lg-12 col-md-12 col-sm-12">
+							<h4></h4>
+							<div class="custom-tab customize-tab tabs_creative">
+								<ul class="nav nav-tabs pb-2 b-0" id="myTab" role="tablist">
+									<li class="nav-item">
+										<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Up Comming Events</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">Completed Events</a>
+									</li>
+									
+								</ul>
+								<div class="tab-content" id="myTabContent">
+									<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+									<div class="container">
+   
+   <table class="table table-striped">
+ <thead>
+   <tr>
+	 <th scope="col">id</th>
+	 <th scope="col">event</th>
+	 <th scope="col">title</th>
+	 <th scope="col">photo</th>
+	 <th scope="col">description</th>
+	 <th scope="col">date</th>
+	 
+   </tr>
+ </thead>
+ <tbody>
+   <?php
+   
+   $q="Select * from `events`";
+   $res=mysqli_query($con,$q);
+   if($res)
+	   {
+		 while($r=mysqli_fetch_assoc($res))
+		   {
+			 $id=$r['id'];
+			 $event=$r['event'];
+			 $title=$r['title'];
+			 $photo=$r['photo'];
+			 $description=$r['description'];
+			 $date=$r['date'];
+			 echo '<tr>
+			 <th scope="row">'.$id.'</th>
+			 <td>'.$event.'</td>
+			 <td>'.$title.'</td>
+			 <td>'.$photo.'</td>
+			 <td>'.$description.'</td>
+			 <td>'.$date.'</td>
+			 <td>
 			
-						<div class="tab-content clearfix">
-						  <div class="tab-pane active" id="1a">
-					  <h3>Upcomming events</h3>
+			</td>
+			 </tr>';
+		   }
+	   }
+   ?>
+	   
+ </tbody>
+</table>
+
+</div>
+									</div>
+									<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+										
+									<div class="container">
+   
+   <table class="table table-striped">
+ <thead>
+   <tr>
+	 <th scope="col">id</th>
+	 <th scope="col">event</th>
+	 <th scope="col">title</th>
+	 <th scope="col">photo</th>
+	 <th scope="col">description</th>
+	 <th scope="col">date</th>
+	 
+   </tr>
+ </thead>
+ <tbody>
+   <?php
+   
+   $q="Select * from `events`";
+   $res=mysqli_query($con,$q);
+   if($res)
+	   {
+		 while($r=mysqli_fetch_assoc($res))
+		   {
+			 $id=$r['id'];
+			 $event=$r['event'];
+			 $title=$r['title'];
+			 $photo=$r['photo'];
+			 $description=$r['description'];
+			 $date=$r['date'];
+			 echo '<tr>
+			 <th scope="row">'.$id.'</th>
+			 <td>'.$event.'</td>
+			 <td>'.$title.'</td>
+			 <td>'.$photo.'</td>
+			 <td>'.$description.'</td>
+			 <td>'.$date.'</td>
+			 <td>
+			
+			</td>
+			 </tr>';
+		   }
+	   }
+   ?>
+	   
+ </tbody>
+</table>
+									</div>
+									
+								</div>
 							</div>
-							<div class="tab-pane" id="2a">
-					  <h3>Completed Events</h3>
-							</div>
-				
 						</div>
-			  </div>
-			
-			
-			<hr></hr>
-		
-			
-			
-			  </div>
-			
-			
+						</div>
+						</div>
+</div>
 			<!-- Bootstrap core JavaScript
 				================================================== -->
 				<!-- Placed at the end of the document so the pages load faster -->
-				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-				<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>  <!-- Tabs content -->
+				<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+				<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>  Tabs content -->
 			<!-- ============================ Hero Banner End ================================== -->
 			
 			  
@@ -208,6 +309,12 @@
 		<script src="assets/js/summernote.min.js"></script>
 		<script src="assets/js/metisMenu.min.js"></script>	
 		<script src="assets/js/custom.js"></script>
+		
+		<script src="assets/js/custom.js"></script>
+		<script src="assets/js/custom-swiper.js"></script>
+		<script src="assets/js/custom-pluggin.js"></script>
+		<script src="assets/js/custom-main.js"></script>
+		<script src="assets/js/custom-nav.js"></script>
 		<!-- ============================================================== -->
 		<!-- This page plugins -->
 		<!-- ============================================================== -->		
