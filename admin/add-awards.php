@@ -318,45 +318,7 @@ if(isset($_POST['submit']))
 								</div>
 							</div>
 							
-							<div class="row">
-						<?php
-						date_default_timezone_set("Asia/Calcutta");  
-						$ct=date('Y-m-d H');
-						$c="select count(regno) as count from log where intime like '$ct%' and out_time='---' ";
-						$re=mysqli_query($con,$c);
-						$r=mysqli_fetch_assoc($re);
-		
-
-?>
-								<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-									<div class="dashboard_stats_wrap">
-										<div class="rounded-circle p-4 p-sm-4 d-inline-flex align-items-center justify-content-center theme-bg mb-2"><div class="position-absolute text-white h5 mb-0"><i class="fas fa-book"></i></div></div>
-										<div class="dashboard_stats_wrap_content"><h4><?php echo $r['count'];?></h4> <span>Current Students in Ideal Lab</span></div>
-									</div>	
-								</div>
-								
-								<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-									<div class="dashboard_stats_wrap">
-										<div class="rounded-circle p-4 p-sm-4 d-inline-flex align-items-center justify-content-center bg-primary mb-2"><div class="position-absolute text-white h5 mb-0"><i class="fas fa-video"></i></div></div>
-										<div class="dashboard_stats_wrap_content"><h4>5.2k</h4> <span>Total Students Visited Ideal lab</span></div>
-									</div>	
-								</div>
-								
-								<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-									<div class="dashboard_stats_wrap">
-										<div class="rounded-circle p-4 p-sm-4 d-inline-flex align-items-center justify-content-center bg-warning mb-2"><div class="position-absolute text-white h5 mb-0"><i class="fas fa-users"></i></div></div>
-										<div class="dashboard_stats_wrap_content"><h4>78k</h4> <span>Other Instution Students</span></div>
-									</div>	
-								</div>
-								
-								<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-									<div class="dashboard_stats_wrap">
-										<div class="rounded-circle p-4 p-sm-4 d-inline-flex align-items-center justify-content-center bg-purple mb-2"><div class="position-absolute text-white h5 mb-0"><i class="fas fa-gem"></i></div></div>
-										<div class="dashboard_stats_wrap_content"><h4>32k</h4> <span>Other Entrepreneurs</span></div>
-									</div>	
-								</div>
-
-							</div>
+							<?php include 'stat.php'; ?>
 							<!-- /Row -->
 							<!-- /Row -->
 							
@@ -431,7 +393,6 @@ if(isset($_POST['submit']))
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12">
-							
 							<div class="call_action_wrap">
 								<div class="call_action_wrap-head">
 									<h3>Do You Have Questions ?</h3>
@@ -473,7 +434,6 @@ if(isset($_POST['submit']))
 											<i class="ti-user"></i>
 										</div>
 									</div>
-									
 									<div class="form-group">
 										<label>Password</label>
 										<div class="input-with-icon">
@@ -481,7 +441,6 @@ if(isset($_POST['submit']))
 											<i class="ti-unlock"></i>
 										</div>
 									</div>
-									
 									<div class="form-group row">
 										<div class="col-xl-4 col-lg-4 col-4">
 											<input id="admin" class="checkbox-custom" name="admin" type="checkbox">
@@ -523,7 +482,6 @@ if(isset($_POST['submit']))
 				</div>
 			</div>
 			<!-- End Modal -->
-			
 			<a id="back2Top" class="top-scroll" title="Back to top" href="#"><i class="ti-arrow-up"></i></a>
 			
 

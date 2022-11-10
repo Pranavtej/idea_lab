@@ -1,3 +1,6 @@
+<?php include 'connect.php'; ?>
+
+
 <!DOCTYPE html>
 <html lang="zxx">
 	<head>
@@ -28,41 +31,20 @@
 			
 			
 			<!-- ============================ Hero Banner  Start================================== -->
-		<div class="hero_banner image-cover image_bottom">
-				<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-lg-9 col-md-10 col-sm-12">
-							<div class="simple-search-wrap">
-								<div class="hero_search-2 text-center">
-				
-				<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-					<div class="carousel-inner">
-					  <div class="carousel-item active">
-						<img src="https://pranavtej.github.io/aicte-ideal-lab/assets/img/slider.png" class="d-block w-100" alt="...">
-					  </div>
-					  <div class="carousel-item">
-						<img src="https://pranavtej.github.io/aicte-ideal-lab/assets/img/slider.png" class="d-block w-100" alt="...">
-					  </div>
-					  <div class="carousel-item">
-						<img src="https://pranavtej.github.io/aicte-ideal-lab/assets/img/slider.png" class="d-block w-100" alt="...">
-					  </div>
-					</div>
-					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-					  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					  <span class="visually-hidden">Previous</span>
-					</button>
-					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-					  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-					  <span class="visually-hidden">Next</span>
-					</button>
-				  </div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	</div>
-	</div>
+			<?php include 'banner.php'; ?>
+     
+	 <section class="banner-main">
+   <div class="banner-content">
+	 <div class="slider banner-slider">
+	   <div class="h2-slider-list">
+		 <div class="main-slide-image" style="background-image: url(assets/img/projects.jpeg)"></div>
+		 
+		 </div>
+	   
+	   </div>
+	 </div>
+   </div>
+ </section>
 			<!-- ============================ Hero Banner End ================================== -->
 			<!-- ================================ Tag Award ================================ -->
 			<!---- <section class="p-0">
@@ -134,100 +116,66 @@
 				</div>
 			</section>-->
 			<!-- ================================Patent cards ================================-->
-            <section class="gray">
-				<div class="container">
-			<div class="row justify-content-center">
-                
-						
-						<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                            <div class="sec-heading center">
-                                <h2> <span class="theme-cl">Projects List</span></h2>
-                                <p>AICTE IDEA labs to foster creativity, experiential
-                                    learning on campus patents 
-                                    </p>
-                            </div>
-							<div class="crs_grid_list">
-								
-								<div class="crs_grid_list_thumb">
-									<a href="course-detail.html"><img src="assets/img/project.png.png" class="img-fluid rounded" alt=""></a>
-								</div>
-								
-								<div class="crs_grid_list_caption">
-									<div class="crs_lt_101">
-										<span class="est st_1">project Id : 100023</span>
-										<!-- <span class="est st_2">Technology</span> -->
-									</div>
-                                    
-									<div class="crs_lt_102">
-										<h2 ="crs_tit">Project name</h2>
-										<h6>Published By :<span class="crs_auth"> Publisher Nmae</span></h6>
-                                       <h6> Publish date : <span class="crs_auth">10/04/2003</span></h6>
-                                        <h6>Author's :<span class="crs_auth"> 1. Names </span><br></h6>
-                                       <h6> Approval By  : <span class="crs_auth"> 1. Names </span></h6>
-
-                                        
-									</div>
-									
-									
-								</div>
-								
-							</div>
-							<div class="crs_grid_list">
-								
-								<div class="crs_grid_list_thumb">
-									<a href="course-detail.html"><img src="assets/img/project.png.png" class="img-fluid rounded" alt=""></a>
-								</div>
-								
-								<div class="crs_grid_list_caption">
-									<div class="crs_lt_101">
-										<span class="est st_1">project Id : 100023</span>
-										<!-- <span class="est st_2">Technology</span> -->
-									</div>
-                                    
-									<div class="crs_lt_102">
-										<h2 ="crs_tit">Project name</h2>
-										<h6>Published By :<span class="crs_auth"> Publisher Nmae</span></h6>
-                                       <h6> Publish date : <span class="crs_auth">10/04/2003</span></h6>
-                                        <h6>Author's :<span class="crs_auth"> 1. Names </span><br></h6>
-                                       <h6> Approval By  : <span class="crs_auth"> 1. Names </span></h6>
-
-                                        
-									</div>
-									
-									
-								</div>
-								
-							</div>
-							<div class="crs_grid_list">
-								
-								<div class="crs_grid_list_thumb">
-									<a href="course-detail.html"><img src="assets/img/project.png.png" class="img-fluid rounded" alt=""></a>
-								</div>
-								
-								<div class="crs_grid_list_caption">
-									<div class="crs_lt_101">
-										<span class="est st_1">project Id : 100023</span>
-										<!-- <span class="est st_2">Technology</span> -->
-									</div>
-                                    
-									<div class="crs_lt_102">
-										<h2 ="crs_tit">Project name</h2>
-										<h6>Published By :<span class="crs_auth"> Publisher Nmae</span></h6>
-                                       <h6> Publish date : <span class="crs_auth">10/04/2003</span></h6>
-                                        <h6>Author's :<span class="crs_auth"> 1. Names </span><br></h6>
-                                       <h6> Approval By  : <span class="crs_auth"> 1. Names </span></h6>
-
-                                        
-									</div>
-									
-									
-								</div>
-								
-							</div>
-						</div>
-              </div>
-                </div>
-                </section>
+			<section class="gray">
+														<div class="container">
+													<div class="row justify-content-center">
+														
+																
+																<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+																	<div class="sec-heading center">
+																		<h2> <span class="theme-cl">Projects List</span></h2>
+																		<p>AICTE IDEA labs to foster creativity, experiential
+																			learning on campus patents 
+																			</p>
+																	</div>
+			<?php
+			
+			$q="Select * from `projects`";
+   $res=mysqli_query($con,$q);
+   if($res)
+	   {
+			while($row=mysqli_fetch_assoc($res))
+                                            {
+												$id=$row['project_id'];
+              $pr_name=$row['project_name'];
+              $pb_name=$row['publisher_name'];
+              $date=$row['date'];
+			  $author=$row['author'];
+			  $approved_by=$row['approved_by'];
+                                                        echo'
+																	<div class="crs_grid_list">
+																		
+																		<div class="crs_grid_list_thumb">
+																			<a href="course-detail.html"><img src="assets/img/project.png.png" class="img-fluid rounded" alt=""></a>
+																		</div>
+																		
+																		<div class="crs_grid_list_caption">
+																			<div class="crs_lt_101">
+																				<span class="est st_1">project Id :'.$id.'</span>
+																				<!-- <span class="est st_2">Technology</span> -->
+																			</div>
+																			
+																			<div class="crs_lt_102">
+																				<h2 ="crs_tit">'.$pr_name.'</h2>
+																				<h6>Published By :<span class="crs_auth">'.$pb_name.'</span></h6>
+																			   <h6> Publish date : <span class="crs_auth">'.$date.'</span></h6>
+																				<h6>Authors :<span class="crs_auth">'.$author.'</span><br></h6>
+																			   <h6> Approval By  : <span class="crs_auth">'.$approved_by.'</span></h6>
+										
+																				
+																			</div>
+																			
+																			
+																		</div>
+																		
+																	</div>
+																	</div>
+																	';
+                                                    }
+												}
+													?>
+													</section>
+            
 
 <!-- ============================ Footer Start ================================== -->
 			<?php
