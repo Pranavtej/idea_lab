@@ -94,19 +94,9 @@
 			</section> -->
 			<!-- ================================ Tag Award ================================ -->
 			<div class="container">
+			<div class="row justify-content-center">
    
-    <table class="table table-striped">
-  <thead>
-    <tr>
-      <th scope="col">title</th>
-      <th scope="col">description</th>
-      <th scope="col">photo</th>
-      <th scope="col">time</th>
-      
-      
-    </tr>
-  </thead>
-  <tbody>
+    
     <?php
     
     $q="Select * from `news`";
@@ -120,22 +110,44 @@
               $photo=$r['photo'];
               $time=$r['time'];
               
-              echo '<tr>
-              <th scope="row">'.$title.'</th>
-              <td>'.$description.'</td>
-              <td>'.$photo.'</td>
-              <td>'.$time.'</td>
-             
-              <td>
-             
-             </td>
-              </tr>';
+              echo '
+						
+			
+			  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+				  <div class="blg_grid_box">
+					  <div class="blg_grid_thumb">
+						  <a ><img src="assets/img/'.$photo.'" class="img-fluid" alt=""></a>
+					  </div>
+					  <div class="blg_grid_caption">
+						  <!-- <div class="blg_tag"><span>Marketing</span></div> -->
+						  <div class="blg_title"><h4>'.$title.'</h4></div>
+						  <div class="blg_desc"><p>'.$description.'</p></div>
+					  </div>
+					  <div class="crs_grid_foot">
+						  <div class="crs_flex">
+							  <div class="crs_fl_first">
+								  <!-- <div class="crs_tutor">
+									  <div class="crs_tutor_thumb"><a href="instructor-detail.html"><img src="assets/img/team-5.jpg" class="img-fluid circle" alt=""></a></div>
+								  </div> -->
+							  </div>
+							  <div class="crs_fl_last">
+								  <div class="foot_list_info">
+									 	<ul>
+										 
+										  <li><div class="elsio_ic"><i class="fa fa-clock text-warning"></i></div><div class="elsio_tx">'.$time.'</div></li>
+									  </ul> 
+								  </div>
+							  </div>
+						  </div>
+					  </div>
+				  </div>
+			
+			  </div>';
             }
         }
     ?>
         
-  </tbody>
-</table>
+		</div>
 
 </div>
 			<!-- ============================ Our Awards Start ================================== -->
