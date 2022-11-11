@@ -31,41 +31,20 @@
 			
 			
 			<!-- ============================ Hero Banner  Start================================== -->
-			<div class="hero_banner image-cover image_bottom">
-				<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-lg-9 col-md-10 col-sm-12">
-							<div class="simple-search-wrap">
-								<div class="hero_search-2 text-center">
-				
-				<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-					<div class="carousel-inner">
-					  <div class="carousel-item active">
-						<img src="https://pranavtej.github.io/aicte-ideal-lab/assets/img/slider.png" class="d-block w-100" alt="...">
-					  </div>
-					  <div class="carousel-item">
-						<img src="https://pranavtej.github.io/aicte-ideal-lab/assets/img/slider.png" class="d-block w-100" alt="...">
-					  </div>
-					  <div class="carousel-item">
-						<img src="https://pranavtej.github.io/aicte-ideal-lab/assets/img/slider.png" class="d-block w-100" alt="...">
-					  </div>
-					</div>
-					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-					  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					  <span class="visually-hidden">Previous</span>
-					</button>
-					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-					  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-					  <span class="visually-hidden">Next</span>
-					</button>
-				  </div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	</div>
-	</div>
+			<?php include 'banner.php'; ?>
+     
+	 <section class="banner-main">
+   <div class="banner-content">
+	 <div class="slider banner-slider">
+	   <div class="h2-slider-list">
+		 <div class="main-slide-image" style="background-image: url(assets/img/pbss.png)"></div>
+		 
+		 </div>
+	   
+	   </div>
+	 </div>
+   </div>
+ </section>
 			<!-- ============================ Hero Banner End ================================== -->
 			<!-- ================================ Tag Award ================================ -->
 			<!-- <section class="p-0">

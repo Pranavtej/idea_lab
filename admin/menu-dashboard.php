@@ -125,7 +125,7 @@
                                         <li class="dropdown">
 											<a href="javascript:void(0);"><i class="fas fa-user"></i>Leader Board<span class="ti-angle-left"></span></a>
 											<ul class="nav nav-second-level">
-												<li><a href="view-leaderboard.html">View Leader Board</a></li>
+												<li><a href="../leaderboard.php">View Leader Board</a></li>
 											</ul>
 										</li>
 										</li>
