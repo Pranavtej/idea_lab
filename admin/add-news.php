@@ -20,15 +20,15 @@ if(isset($_POST['submit']))
     $time=date('His');
 
 	// $q="INSERT INTO `news`(`id`,`title`, `description`, `photo` ) VALUES ('$id','$title','$desc','$img')";
-	
-	$name_new = $_FILES['my_image']['name_img'];
-    $tmp_ = $_FILES['my_image']['tmp_name'];
+	if(isset($_FILES['my_image']))	
+	{
+	$file_name = $_FILES['my_image']['name'];
+	$file_tmp = $_FILES['my_image']['tmp_name'];
+    // $tmp_ = $_FILES['my_image']['tmp_name'];
     $fname = explode('.', $_FILES['my_image']['name']);
-    $img=$id.'.'.$fname[1] ;
-	if(isset($name)){
+    $img=$fname[0].'.'.$fname[1] ;
+	move_uploaded_file($file_tmp,"../uploads/news/$img");
     
-		move_uploaded_file($tmp_,"uploads/news/$img");
-    }
 	$q="INSERT INTO `news`(`id`,`title`, `description`, `photo` ) VALUES ('$id','$title','$desc','$img')";
 	$res=mysqli_query($con,$q);
 	if($res){
@@ -38,6 +38,8 @@ if(isset($_POST['submit']))
 	else{
 		echo "<script type='text/javascript'>alert('Error: Failled to add details')</script>";
 		}
+
+	}
 	}
 
 ?>
@@ -336,7 +338,7 @@ if(isset($_POST['submit']))
 								<div class="col-xl-12 col-lg-12 col-md-12">
 									<div class="card">
 							<!-- form startRow -->
-                            <form method="POST">
+                            <form method="POST"enctype="multipart/form-data">
                             <div class="col-lg-12 col-md-12 col-sm-12">
 										<h3 class="ml-0">ADD NEWS</h3>
 									</div>
@@ -363,7 +365,7 @@ if(isset($_POST['submit']))
                                         <label>Select Image File:</label>
                                         <input type="file" name="my_image" id="my_image"></input>
                                     
-								</div>
+								</div>	
 								<button type="submit" name="submit" class="btn btn-primary">Submit</button>
 							</form>
 							<!-- form end Row -->

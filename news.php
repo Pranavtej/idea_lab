@@ -126,7 +126,7 @@
 					  <div class="crs_grid_foot">
 						  <div class="crs_flex">
 							  <div class="crs_fl_first">
-								  <!-- <div class="crs_tutor">
+								  <!-- <div class="crs_tuto	r">
 									  <div class="crs_tutor_thumb"><a href="instructor-detail.html"><img src="assets/img/team-5.jpg" class="img-fluid circle" alt=""></a></div>
 								  </div> -->
 							  </div>
