@@ -20,13 +20,14 @@ if(isset($_POST['submit']))
     $time=date('His');
 
 	// $q="INSERT INTO `news`(`id`,`title`, `description`, `photo` ) VALUES ('$id','$title','$desc','$image')";
-	$res=mysqli_query($con,$q);
+	
 	$image = $_FILES['image']['name'];
     $tmp_ = $_FILES['image']['tmp_name'];
    $fname = explode('.', $_FILES['image']['name']);
     $v=$id.'.'.$fname[1] ;
     move_uploaded_file($tmp_,"uploads/news/$v");
 	$q="INSERT INTO `news`(`id`,`title`, `description`, `photo` ) VALUES ('$id','$title','$desc','$v')";
+	$res=mysqli_query($con,$q);
 	if($res){
 									
 		echo "<script type='text/javascript'>alert('Details added successfully')</script>";
