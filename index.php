@@ -28,8 +28,8 @@
 			<!-- ============================================================== -->
 			<div class="hero_banner image-cover image_bottom">
 			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-lg-9 col-md-10 col-sm-12">
+				<div class="row justify-content-center	">
+					<div class="col-lg-15 col-md-10 col-sm-12">
 						<div class="simple-search-wrap">
 							<div class="hero_search-2 text-center">
 			

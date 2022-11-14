@@ -115,12 +115,14 @@
                 
 						
 						<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+						
                             <div class="sec-heading center">
                                 <h2> <span class="theme-cl">Leadership Team</span></h2>
                                 <!-- <p>AICTE IDEA labs to foster creativity, experiential
                                     learning on campus patents 
                                     </p> -->
                             </div>
+							
 							<div class="crs_grid_list">
 								
 								<div class="crs_grid_list_thumb">

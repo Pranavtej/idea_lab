@@ -128,8 +128,9 @@
 																			learning on campus patents 
 																			</p>
 																	</div>
-			<?php
-			<div class="row justify-content-center">
+																	<div class="row justify-content-center">
+																		<?php
+			
 			$q="Select * from `projects`";
    $res=mysqli_query($con,$q);
    if($res)
