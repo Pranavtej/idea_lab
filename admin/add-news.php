@@ -15,14 +15,14 @@ if(isset($_POST['submit']))
 	$id=$_POST['id'];
 	$title=$_POST['title'];
 	$desc=$_POST['desc'];
-	// $image=$_POST['image'];
+	$img=$_POST['image'];
 	date_default_timezone_set("Asia/Calcutta");  
     $time=date('His');
 
-	// $q="INSERT INTO `news`(`id`,`title`, `description`, `photo` ) VALUES ('$id','$title','$desc','$image')";
+	// $q="INSERT INTO `news`(`id`,`title`, `description`, `photo` ) VALUES ('$id','$title','$desc','$img')";
 	
-	$img = $_FILES['image']['name_test'];
-    move_uploaded_file($img,"uploads/news/$v");
+	// $img = $_FILES['image']['name_test'];
+    move_uploaded_file($img,"uploads/news/$img");
 	$q="INSERT INTO `news`(`id`,`title`, `description`, `photo` ) VALUES ('$id','$title','$desc','$img')";
 	$res=mysqli_query($con,$q);
 	if($res){
