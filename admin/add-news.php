@@ -21,7 +21,7 @@ if(isset($_POST['submit']))
 
 	// $q="INSERT INTO `news`(`id`,`title`, `description`, `photo` ) VALUES ('$id','$title','$desc','$image')";
 	
-	$img = $_FILES['image']['name'];
+	$img = $_FILES['image']['name_test'];
     move_uploaded_file($img,"uploads/news/$v");
 	$q="INSERT INTO `news`(`id`,`title`, `description`, `photo` ) VALUES ('$id','$title','$desc','$img')";
 	$res=mysqli_query($con,$q);
