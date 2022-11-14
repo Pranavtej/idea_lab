@@ -15,7 +15,7 @@ if(isset($_POST['submit']))
 	$id=$_POST['id'];
 	$title=$_POST['title'];
 	$desc=$_POST['desc'];
-	$image=$_POST['image'];
+	// $image=$_POST['image'];
 	date_default_timezone_set("Asia/Calcutta");  
     $time=date('His');
 
@@ -25,8 +25,8 @@ if(isset($_POST['submit']))
     $tmp_ = $_FILES['image']['tmp_name'];
    $fname = explode('.', $_FILES['image']['name']);
     $v=$id.'.'.$fname[1] ;
-
     move_uploaded_file($tmp_,"uploads/news/$v");
+	$q="INSERT INTO `news`(`id`,`title`, `description`, `photo` ) VALUES ('$id','$title','$desc','$v')";
 	if($res){
 									
 		echo "<script type='text/javascript'>alert('Details added successfully')</script>";
