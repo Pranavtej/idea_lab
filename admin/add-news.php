@@ -15,14 +15,20 @@ if(isset($_POST['submit']))
 	$id=$_POST['id'];
 	$title=$_POST['title'];
 	$desc=$_POST['desc'];
-	$img=$_POST['image'];
+	// $img=$_POST['image'];
 	date_default_timezone_set("Asia/Calcutta");  
     $time=date('His');
 
 	// $q="INSERT INTO `news`(`id`,`title`, `description`, `photo` ) VALUES ('$id','$title','$desc','$img')";
 	
-	// $img = $_FILES['image']['name_test'];
-    move_uploaded_file($img,"uploads/news/$img");
+	$name_new = $_FILES['my_image']['name_img'];
+    $tmp_ = $_FILES['my_image']['tmp_name'];
+    $fname = explode('.', $_FILES['my_image']['name']);
+    $img=$id.'.'.$fname[1] ;
+	if(isset($name)){
+    
+		move_uploaded_file($tmp_,"uploads/news/$img");
+    }
 	$q="INSERT INTO `news`(`id`,`title`, `description`, `photo` ) VALUES ('$id','$title','$desc','$img')";
 	$res=mysqli_query($con,$q);
 	if($res){
@@ -355,7 +361,7 @@ if(isset($_POST['submit']))
 									</div>
 									
                                         <label>Select Image File:</label>
-                                        <input type="file" name="image">
+                                        <input type="file" name="my_image" id="my_image"></input>
                                     
 								</div>
 								<button type="submit" name="submit" class="btn btn-primary">Submit</button>
