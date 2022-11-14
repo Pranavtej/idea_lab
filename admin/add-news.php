@@ -21,6 +21,12 @@ if(isset($_POST['submit']))
 
 	$q="INSERT INTO `news`(`id`,`title`, `description`, `photo` ) VALUES ('$id','$title','$desc','$image')";
 	$res=mysqli_query($con,$q);
+	$receipt = $_FILES['receipt']['name'];
+    $tmp_ = $_FILES['receipt']['tmp_name'];
+    $v=$id.'.'.$fname[1] ;
+
+    move_uploaded_file($tmp_,"uploads/news/$v");
+
 	if($res){
 									
 		echo "<script type='text/javascript'>alert('Details added successfully')</script>";

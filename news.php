@@ -116,7 +116,7 @@
 			  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
 				  <div class="blg_grid_box">
 					  <div class="blg_grid_thumb">
-						  <a ><img src="assets/img/'.$photo.'" class="img-fluid" alt=""></a>
+						  <a ><img src="uploads/news/'.$photo.'" class="img-fluid" alt=""></a>
 					  </div>
 					  <div class="blg_grid_caption">
 						  <!-- <div class="blg_tag"><span>Marketing</span></div> -->
