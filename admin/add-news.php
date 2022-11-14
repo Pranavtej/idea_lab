@@ -19,7 +19,7 @@ if(isset($_POST['submit']))
 	date_default_timezone_set("Asia/Calcutta");  
     $time=date('His');
 
-	$q="INSERT INTO `news`(`id`,`title`, `description`, `photo` ) VALUES ('$id','$title','$desc','$image')";
+	// $q="INSERT INTO `news`(`id`,`title`, `description`, `photo` ) VALUES ('$id','$title','$desc','$image')";
 	$res=mysqli_query($con,$q);
 	$image = $_FILES['image']['name'];
     $tmp_ = $_FILES['image']['tmp_name'];
