@@ -129,7 +129,7 @@
 																			</p>
 																	</div>
 			<?php
-			
+			<div class="row justify-content-center">
 			$q="Select * from `projects`";
    $res=mysqli_query($con,$q);
    if($res)
@@ -146,7 +146,7 @@
 																	<div class="crs_grid_list">
 																		
 																		<div class="crs_grid_list_thumb">
-																			<a href="course-detail.html"><img src="assets/img/project.png.png" class="img-fluid rounded" alt=""></a>
+																			<a ><img src="assets/img/project.png.png" class="img-fluid rounded" alt=""></a>
 																		</div>
 																		
 																		<div class="crs_grid_list_caption">
