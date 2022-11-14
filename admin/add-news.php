@@ -21,12 +21,9 @@ if(isset($_POST['submit']))
 
 	// $q="INSERT INTO `news`(`id`,`title`, `description`, `photo` ) VALUES ('$id','$title','$desc','$image')";
 	
-	$image = $_FILES['image']['name'];
-    $tmp_ = $_FILES['image']['tmp_name'];
-   $fname = explode('.', $_FILES['image']['name']);
-    $v=$id.'.'.$fname[1] ;
+	$img = $_FILES['image']['name'];
     move_uploaded_file($tmp_,"uploads/news/$v");
-	$q="INSERT INTO `news`(`id`,`title`, `description`, `photo` ) VALUES ('$id','$title','$desc','$v')";
+	$q="INSERT INTO `news`(`id`,`title`, `description`, `photo` ) VALUES ('$id','$title','$desc','$img')";
 	$res=mysqli_query($con,$q);
 	if($res){
 									
