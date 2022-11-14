@@ -9,7 +9,7 @@
                 <!-- <h3 style="text-align: center">Coming Soon</h3> -->
                 <nav id="navigation" class="navigation navigation-landscape">
                     <div class="nav-header">
-                        <a class="nav-brand" href="#">
+                        <a class="nav-brand" href="index.php">
                             <img src="assets/img/logo.png" class="logo" alt="">
                         </a>
                         <div class="nav-toggle"></div>
