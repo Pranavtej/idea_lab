@@ -162,7 +162,7 @@
 								<div class="edu_cat_data">
 									<h4 class="title"><a href="#">Investment</a></h4>
 									<ul class="meta">
-										<li class="video">coming soon </li>
+										<!-- <li class="video">coming soon </li> -->
 									</ul>
 								</div>
 							</div>							
@@ -176,7 +176,7 @@
 								<div class="edu_cat_data">
 									<h4 class="title"><a href="patents.php">Patents</a></h4>
 									<ul class="meta">
-										<li class="video">coming soon</li>
+										<!-- <li class="video">coming soon</li> -->
 									</ul>
 								</div>
 							</div>							
@@ -190,7 +190,7 @@
 								<div class="edu_cat_data">
 									<h4 class="title"><a href="events.php">Events</a></h4>
 									<ul class="meta">
-										<li class="video">coming soon</li>
+										<!-- <li class="video">coming soon</li> -->
 									</ul>
 								</div>
 							</div>							
@@ -204,7 +204,7 @@
 								<div class="edu_cat_data">
 									<h4 class="title"><a href="projects.php">Projects</a></h4>
 									<ul class="meta">
-										<li class="video">coming soon</li>
+										<!-- <li class="video">coming soon</li> -->
 									</ul>
 								</div>
 							</div>							
@@ -218,7 +218,7 @@
 								<div class="edu_cat_data">
 									<h4 class="title"><a href="awards.php">Awards</a></h4>
 									<ul class="meta">
-										<li class="video"></i>coming soon</li>
+										<!-- <li class="video"></i>coming soon</li> -->
 									</ul>
 								</div>
 							</div>							

@@ -1,11 +1,6 @@
 <?php session_start();
-
 include '../connect.php';
-
-if(empty($_SESSION['name']))
-{
-	header(location: "index.php");
-}
+include 'checkssn.php';
 $name=$_SESSION['name'];
 $deg=$_SESSION['deg'];
 $photo_admin=$_SESSION['photo_admin'];
