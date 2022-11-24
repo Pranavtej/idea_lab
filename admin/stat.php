@@ -16,14 +16,14 @@
 								<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
 									<div class="dashboard_stats_wrap">
 										<div class="rounded-circle p-4 p-sm-4 d-inline-flex align-items-center justify-content-center theme-bg mb-2"><div class="position-absolute text-white h5 mb-0"><i class="fas fa-users"></i></div></div>
-										<div class="dashboard_stats_wrap_content"><h4><?php echo $r['count'];?></h4> <span>Current Students in Ideal Lab</span></div>
+										<div class="dashboard_stats_wrap_content"><h4><a href="std-list-curr.php"><?php echo $r['count'];?></h4></a> <span>Current Students in Ideal Lab</span></div>
 									</div>	
 								</div>
 								
 								<div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
 									<div class="dashboard_stats_wrap">
 										<div class="rounded-circle p-4 p-sm-4 d-inline-flex align-items-center justify-content-center bg-blue mb-2"><div class="position-absolute text-white h5 mb-0"><i class="fas fa-users"></i></div></div>
-										<div class="dashboard_stats_wrap_content"><h4><?php echo $results['count'];?></h4> <span>Total Students Visited Ideal lab</span></div>
+										<div class="dashboard_stats_wrap_content"><h4><a href="tot-std-list.php"><?php echo $results['count'];?></h4></a> <span>Total Students Visited Ideal lab</span></div>
 									</div>	
 								</div>
 								

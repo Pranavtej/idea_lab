@@ -10,11 +10,20 @@
      $counter=mysqli_num_rows($res);
      if($counter!=0)
      {
+		if($details['designation']=='staff')
+		{
+			$_SESSION['name']=$details['name'];
+        $_SESSION['deg']=$details['designation'];
+        $_SESSION['photo_admin']=$details['photo'];
+		echo" <script>document.location='staff-dashboard.php'</script>";
+		}
+		else{
         $_SESSION['name']=$details['name'];
         $_SESSION['deg']=$details['designation'];
         $_SESSION['photo_admin']=$details['photo'];
       
         echo" <script>document.location='dashboard.php'</script>";
+		}
      }
      else 
      {
